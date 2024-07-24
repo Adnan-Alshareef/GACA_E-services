@@ -13,5 +13,5 @@ The portal aims to streamline administrative processes, enhance communication be
 Would you like me to expand on any particular aspect of this description?.
 
 ## Team members
- Markup : - Amine chouiha (Back-end)
-          - Adnan Alshareef (Front-end and UI/UX) 
+- Amine chouiha (Back-end)
+- Adnan Alshareef (Front-end and UI/UX) 
