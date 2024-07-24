@@ -10,7 +10,6 @@ Safety reporting and incident management
 Aviation business licensing and permits
 
 The portal aims to streamline administrative processes, enhance communication between GACA and industry partners, and improve overall efficiency in Saudi Arabia's aviation sector.
-Would you like me to expand on any particular aspect of this description?.
 
 ## Team members
 - Amine chouiha (Back-end)
