@@ -1,0 +1,3998 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- favicon tags -->
+	<link rel="apple-touch-icon" sizes="60x60" href="./images/favicon/apple-touch-icon.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png" />
+	<link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon.ico" />
+	<link rel="manifest" href="./images/favicon/site.webmanifest" />
+	<meta name="msapplication-TileColor" content="#ffffff" />
+	<meta name="msapplication-TileImage" content="./images/favicon/mstile-150x150.png" />
+	<meta name="theme-color" content="#ffffff" />
+	<!-- favicon tags end -->
+
+	<title>GACA | الهيئة العامة للطيران المدني</title>
+	<!-- Libraries -->
+	<link rel="stylesheet" href="./libraries/bootstrap-5.1.3/css/bootstrap.css" />
+	<link rel="stylesheet" href="./libraries/slick-1.8.1/slick.css" />
+	<link rel="stylesheet" href="./libraries/slick-1.8.1/slick-theme.css" />
+	<link rel="stylesheet" href="./libraries/datatable/css/jquery.dataTables.min.css" />
+	<link rel="stylesheet" href="./libraries/datatable/css/datatable-custom-theme.css" />
+	<link rel="stylesheet" href="./libraries/pushymenu/css/pushy.css" />
+	<link rel="stylesheet" href="./libraries/pushymenu/css/pushy-en.css" />
+	<link rel="stylesheet" href="./libraries/datepicker/css/bootstrap-datetimepicker.css">
+	<link rel="stylesheet" href="./libraries/quill/quillStyle/quill.snow.css">
+	<!-- Libraries end -->
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="./fonts/fonts.css" />
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/E-services.css">
+	<link rel="stylesheet" href="./css/style.en.css" />
+	<link rel="stylesheet" href="./css/style.mobile.css" />
+	<link rel="stylesheet" href="./libraries/autoComplete/autoComplete.css  ">
+	<script src="./libraries/jquery-3.6.0/js/jquery.js"></script>
+	<script src="./libraries/autoComplete/Jquery_UI.js"></script>
+</head>
+
+<body>
+	<!-- Header & Navbar -->
+	<div class="logos">
+		<div class="container logos">
+			<div class="text_link_component t_op_header">
+				<div class="tlc_first">
+					<div class="tlc_text">
+						<img class="gacalogo op_logo_image" src="./images/gaca_header_logo.png" alt="">
+					</div>
+				</div>
+				<div class="tlc_last gacalogo">
+					<!-- <div class="op">
+                        <p class="welcome_text">Welcome back <span>Ahmed</span> <span class="numb_of_notification">10</span></p>
+                        <a id="profile" data-bs-toggle="modal" data-bs-target="#profileModal" href="profile_link">MY PROFILE</a>
+                        <a id="signout" data-bs-toggle="modal" data-bs-target="#signoutModal" href="signoutlink">SIGN OUT</a>
+                    </div> -->
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<nav class="navbar navbar-expand-lg navbar-dark">
+		<div class="container">
+			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="navbar-nav">
+					<li class="nav-item active">
+						<a href="#" class="nav-link">Home</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">GACA E-Services</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">My Application</a>
+					</li>
+
+				</ul>
+				<div class="ms-auto">
+
+					<input class="btnl btn  myprofilebtn m-2" type="button" value="MY PROFILE"></input>
+					<input class="loginbtn btn " type="button" value="SIGN OUT"></input>
+				</div>
+			</div>
+
+			<button class="menu-btn">☰</button>
+		</div>
+	</nav>
+	<!-- Pushy Menu -->
+	<nav class="pushy pushy-left">
+		<div class="pushy-content">
+			<a href="#" class="mobile-x">×</a>
+			<div id="op-mobile" class="text-center">
+			</div>
+			<ul class="mobile-menu">
+				<li><a href="./00_Register_ar.html" class="lang_switcher_button">العربية</a></li>
+				<li><a href="#">Homepage</a></li>
+				<li><a href="#">Contact Us</a></li>
+				<li><a href="#">profile</a></li>
+			</ul>
+		</div>
+	</nav>
+	<!-- Site Overlay -->
+	<div class="site-overlay"></div>
+
+	<!-- Main -->
+	<div class="mainbody">
+		<div class="container" id="container">
+			<div class="infopage mt-3 mb-5">
+				<div class="whiteSpace">
+					<div class="pt-1">
+						<div class="d-flex justify-content-between align-items-baseline mb-2">
+							<div class="pagetitle">
+								<h1>
+									Add New EService
+								</h1>
+							</div>
+							<div>
+								<div class="d-flex align-items-center">
+									<div class="">
+										<a class="conversionslinks lightbluebold" href="#" onclick="history.back()">Go
+											Back
+											<img class="px-2" src="./images/gobackicon.png" alt="">
+										</a>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<hr>
+						<form action="/eservices/admin/eservice/add?_csrf=5f9ce8c4-216c-4974-90e2-b9e0d5e926b4"
+							method="POST" enctype="multipart/form-data">
+							<div class="row">
+								<div class="col-lg-12">
+									<div class="pagesubtitle">
+										<span style="font-size: 1.5rem;">Title</span>
+									</div>
+									<div class="mt-3">
+										<input type="text" name="title" class="form-control" value="" required="">
+									</div>
+								</div>
+
+								<div class="col-lg-12 mt-4">
+									<div class="d-flex align-items-center">
+										<div>
+											<img src="./images/infoblueicon.png" alt="">
+										</div>
+										<div class="mx-3 pagesubtitle">
+											<span style="font-size: 1.5rem;">Description</span>
+										</div>
+									</div>
+									<div class="mt-3">
+										<textarea class="form-control lg-box" name="description" required=""></textarea>
+									</div>
+								</div>
+
+
+								<div class="col-lg-12 mt-4">
+									<div class="d-flex align-items-center">
+										<div>
+											<img src="./images/Audience.png" alt="">
+										</div>
+										<div class="mx-3 pagesubtitle">
+											<span style="font-size: 1.5rem;">Audience</span>
+										</div>
+									</div>
+									<div class="mt-3">
+										<textarea class="form-control lg-box" name="audience"></textarea>
+									</div>
+								</div>
+
+								<div class="col-lg-12 mt-4">
+									<div class="d-flex align-items-center">
+										<div>
+											<img src="./images/pre-request.png" alt="Pre-Requisites">
+										</div>
+										<div class="mx-3 pagesubtitle">
+											<span style="font-size: 1.5rem;">Pre-Requisites</span>
+										</div>
+									</div>
+									<div class="mt-3">
+										<textarea class="form-control lg-box" name="prerequisites"></textarea>
+									</div>
+								</div>
+
+								<div class="col-lg-12 mt-4">
+									<div class="d-flex align-items-center">
+										<div>
+											<img src="./images/infoblueicon.png" alt="Procedure">
+										</div>
+										<div class="mx-3 pagesubtitle">
+											<span style="font-size: 1.5rem;">Procedure</span>
+										</div>
+									</div>
+									<div class="mt-3">
+										<textarea class="form-control lg-box" name="procedure"></textarea>
+									</div>
+								</div>
+
+								<div class="col-lg-12 mt-4">
+									<div class="d-flex align-items-center">
+										<div>
+											<img src="./images/DeliveryTime.png" alt="Delivery Time">
+										</div>
+										<div class="mx-3 pagesubtitle">
+											<span style="font-size: 1.5rem;">Delivery Time</span>
+										</div>
+									</div>
+									<div class="mt-3">
+										<input type="text" name="deliveryTime" class="form-control" value="">
+									</div>
+								</div>
+
+								<div class="col-lg-12 mt-4">
+									<div class="d-flex align-items-center">
+										<div>
+											<img src="./images/TermsandConditions.png" alt="Terms and Conditions">
+										</div>
+										<div class="mx-3 pagesubtitle">
+											<span style="font-size: 1.5rem;">Terms and Conditions</span>
+										</div>
+									</div>
+									<div class="mt-3">
+										<textarea class="form-control lg-box" name="termsConditions"></textarea>
+									</div>
+								</div>
+
+								<div class="col-lg-12 mt-4">
+									<div class="d-flex align-items-center">
+										<div>
+											<img src="./images/AdditionalHelp.png" alt="Additional Help">
+										</div>
+										<div class="mx-3 pagesubtitle">
+											<span style="font-size: 1.5rem;">Additional Help</span>
+										</div>
+									</div>
+									<div class="mt-3">
+										<textarea class="form-control lg-box" name="additionalHelp"></textarea>
+									</div>
+								</div>
+
+								<div class="mt-5">
+									<div class="mt-5">
+										<div class="sectiontitles">
+											<h4>Documents</h4>
+										</div>
+									</div>
+									<div class="d-flex align-items-center mt-5">
+										<div>
+											<img src="./images/requiredForms.png" alt="Required Forms">
+										</div>
+										<div class="mx-3 pagesubtitle">
+											<span style="font-size: 1.5rem;">Required Forms</span>
+										</div>
+									</div>
+									<div class="d-flex align-items-center mt-5">
+										<div class="w-50 me-5">
+											<div class="d-flex align-items-center flex-column">
+												<div class="w-100 formAdded-title">
+													<h4>Form</h4>
+												</div>
+												<div class="w-100">
+													<select id="formId" class="form-select">
+														<option value="" selected="">Select</option>
+
+														<option value="1440407059784"
+															title=" 260 APPLICATION FOR 406 MHz ELT REGISTRATION">
+															260 APPLICATION FOR 406 MHz ELT REGISTRATION
+														</option>
+
+														<option value="1440410323153"
+															title=" EXAMINER DESIGNATION AND QUALIFICATION RECORD GACA_Form_8710-6">
+															EXAMINER DESIGNATION AND QUALIFICATION RECORD
+															GACA_Form_8710-6
+														</option>
+
+														<option value="1440407282428"
+															title="002 Ground Handling Operator Licensing (Renewal) form">
+															002 Ground Handling Operator Licensing (Renewal) form
+														</option>
+
+														<option value="1440407282882"
+															title="003 Ground Handling Operator Licensing (Revocation) form">
+															003 Ground Handling Operator Licensing (Revocation) form
+														</option>
+
+														<option value="1440407283226"
+															title="004 Ground Handling Operator Licensing (update ) form">
+															004 Ground Handling Operator Licensing (update ) form
+														</option>
+
+														<option value="1440406999103"
+															title="005 Request for Letter of Support for Aviation Support Services Operators form">
+															005 Request for Letter of Support for Aviation Support
+															Services Operat...
+														</option>
+
+														<option value="1440406667503"
+															title="006 Request for Letter of Support for commercial visit visa">
+															006 Request for Letter of Support for commercial visit visa
+														</option>
+
+														<option value="1440406667702"
+															title="007 Request for Letter of Support for permanent work visa form">
+															007 Request for Letter of Support for permanent work visa
+															form
+														</option>
+
+														<option value="1440406668058"
+															title="008 Request for Letter of Support to a bank">
+															008 Request for Letter of Support to a bank
+														</option>
+
+														<option value="1440407186866"
+															title="016 Hazard reporting notification">
+															016 Hazard reporting notification
+														</option>
+
+														<option value="1440407185099"
+															title="100-B APPLICATION FOR AIRCRAFT REGISTRATION">
+															100-B APPLICATION FOR AIRCRAFT REGISTRATION
+														</option>
+
+														<option value="1440407334243"
+															title="1596 Certification Application">
+															1596 Certification Application
+														</option>
+
+														<option value="1440407334297"
+															title="1631 Certification Complaincy">
+															1631 Certification Complaincy
+														</option>
+
+														<option value="1440408123750"
+															title="170-1 APPLICATION FOR AIR NAVIGATION SERVICE CERTIFICATE UNDER GACAR PART 170">
+															170-1 APPLICATION FOR AIR NAVIGATION SERVICE CERTIFICATE
+															UNDER GACAR P...
+														</option>
+
+														<option value="1440408123951"
+															title="183-02 Obstacle Assessor Application Form">
+															183-02 Obstacle Assessor Application Form
+														</option>
+
+														<option value="1440407054700"
+															title="201 APPLICATON FOR ISSUE-RENUWAL OF AIRWORTHINESS CERTIFICATE">
+															201 APPLICATON FOR ISSUE-RENUWAL OF AIRWORTHINESS
+															CERTIFICATE
+														</option>
+
+														<option value="1440407052821"
+															title="202 SELECTION OF INSPECTION PROGRAM TO COMPLY WITH GACAR 91 449">
+															202 SELECTION OF INSPECTION PROGRAM TO COMPLY WITH GACAR 91
+															449
+														</option>
+
+														<option value="1440407052863"
+															title="203 AIRWORTHINESS DIRECTIVE COMPLIACNE RECORD">
+															203 AIRWORTHINESS DIRECTIVE COMPLIACNE RECORD
+														</option>
+
+														<option value="1440407262985"
+															title="203A MANUFACTURE SERVICE DOCUMENTS RECORD">
+															203A MANUFACTURE SERVICE DOCUMENTS RECORD
+														</option>
+
+														<option value="1440407053095"
+															title="204 MAJOR REPAIRS - ALTERATIONS RECORD">
+															204 MAJOR REPAIRS - ALTERATIONS RECORD
+														</option>
+
+														<option value="1440407053158"
+															title="205 LIFE LIMITED COMPONENT - PART STATUS">
+															205 LIFE LIMITED COMPONENT - PART STATUS
+														</option>
+
+														<option value="1440407053207" title="206 AIRCRAFT DATA SHEET">
+															206 AIRCRAFT DATA SHEET
+														</option>
+
+														<option value="1440407346564"
+															title="207 CHECKLIST FOR CERTIFICATE OF AIRWORTHINESS">
+															207 CHECKLIST FOR CERTIFICATE OF AIRWORTHINESS
+														</option>
+
+														<option value="1440407053319"
+															title="211 CERTIFICATE OF INSPECTIONS (GACAR 43 15) (Inspections cond">
+															211 CERTIFICATE OF INSPECTIONS (GACAR 43 15) (Inspections
+															cond
+														</option>
+
+														<option value="1440407053667"
+															title="212 CERTIFICATION OF ALTIMETER SYSTEM AND ALTITUDE REPORTING E">
+															212 CERTIFICATION OF ALTIMETER SYSTEM AND ALTITUDE REPORTING
+															E
+														</option>
+
+														<option value="1440407053725"
+															title="213 CERTIFICATION OF ATC TRANSPONDER TEST AND INSPECTIONS">
+															213 CERTIFICATION OF ATC TRANSPONDER TEST AND INSPECTIONS
+														</option>
+
+														<option value="1440407053789"
+															title="214 CERTIFICATION OF THE BATTERYREPLACEMENT OF THE EMERGENCY L">
+															214 CERTIFICATION OF THE BATTERYREPLACEMENT OF THE EMERGENCY
+															L
+														</option>
+
+														<option value="1440407057181"
+															title="222 APPLICATION FOR AIRCRAFT SPECIAL FLIGHT PERMIT">
+															222 APPLICATION FOR AIRCRAFT SPECIAL FLIGHT PERMIT
+														</option>
+
+														<option value="1440407053851"
+															title="250 APPLICATION FOR ASSIGNMENT OF A UNIQUE 24-BIT ADDRESS FOR ">
+															250 APPLICATION FOR ASSIGNMENT OF A UNIQUE 24-BIT ADDRESS
+															FOR
+														</option>
+
+														<option value="1440407055496"
+															title="260 APPLICATION FOR 406 MHz ELT REGISTRATION">
+															260 APPLICATION FOR 406 MHz ELT REGISTRATION
+														</option>
+
+														<option value="1440406668504" title="4.1.6 Application form">
+															4.1.6 Application form
+														</option>
+
+														<option value="1440407079136" title="400 B ATC FORM">
+															400 B ATC FORM
+														</option>
+
+														<option value="1440407057976"
+															title="8110-12 APPLICATION FOR (STC) AND (RDA)">
+															8110-12 APPLICATION FOR (STC) AND (RDA)
+														</option>
+
+														<option value="1440407058103"
+															title="8110-12-1 APPLICATION FOR TYPE CERTIFICATE SUPPLEMENTAL TYPE CERTIFICATE VALIDATION">
+															8110-12-1 APPLICATION FOR TYPE CERTIFICATE SUPPLEMENTAL TYPE
+															CERTIFICA...
+														</option>
+
+														<option value="1440407056384"
+															title="8110-14 STATEMENT OF QUALIFICATION (DAR-DER-DME)">
+															8110-14 STATEMENT OF QUALIFICATION (DAR-DER-DME)
+														</option>
+
+														<option value="1440407052552"
+															title="8130-1 APPLICATION FOR EXPORT CERTIFICATE OF AIRWORTHINESS">
+															8130-1 APPLICATION FOR EXPORT CERTIFICATE OF AIRWORTHINESS
+														</option>
+
+														<option value="1440407058838"
+															title="8310-3 APPLICATION FOR REPAIR STATION CERTIFICATE">
+															8310-3 APPLICATION FOR REPAIR STATION CERTIFICATE
+														</option>
+
+														<option value="1440407118091" title="8400-6 pasi">
+															8400-6 pasi
+														</option>
+
+														<option value="1440407180505"
+															title="8420-8 Pilot School Certification">
+															8420-8 Pilot School Certification
+														</option>
+
+														<option value="1440407125718"
+															title="8520-2 Application for Designation as a Medical Examiner">
+															8520-2 Application for Designation as a Medical Examiner
+														</option>
+
+														<option value="1440407078322"
+															title="8610-2 AIRMAN CERTIFICATE AND-OR RATING APPLICATION">
+															8610-2 AIRMAN CERTIFICATE AND-OR RATING APPLICATION
+														</option>
+
+														<option value="1440407076850"
+															title="8710 PILOT CERTIFICATE ANDOR RATING APPLICATION">
+															8710 PILOT CERTIFICATE ANDOR RATING APPLICATION
+														</option>
+
+														<option value="1440407118135" title="AAD-101">
+															AAD-101
+														</option>
+
+														<option value="1440406391867"
+															title="AIRCRAFT CLEARANCE REQUEST FORM (SINGLE FLIGHT)">
+															AIRCRAFT CLEARANCE REQUEST FORM (SINGLE FLIGHT)
+														</option>
+
+														<option value="1440406388087"
+															title="ANNUAL PERMIT APP. &amp; REQUIREMENTS">
+															ANNUAL PERMIT APP. &amp; REQUIREMENTS
+														</option>
+
+														<option value="1440410979615"
+															title="Aircraft Permit Application Form">
+															Aircraft Permit Application Form
+														</option>
+
+														<option value="1440406668601"
+															title="Application form for airline office">
+															Application form for airline office
+														</option>
+
+														<option value="1440410809692"
+															title="CL-100 Checklist for LSA Airworthiness Certificate">
+															CL-100 Checklist for LSA Airworthiness Certificate
+														</option>
+
+														<option value="1440410808505"
+															title="F-100 LSA Aircraft Data Sheet">
+															F-100 LSA Aircraft Data Sheet
+														</option>
+
+														<option value="1440410808362"
+															title="F-101 LSA - Airworthiness Directives Compliance Records">
+															F-101 LSA - Airworthiness Directives Compliance Records
+														</option>
+
+														<option value="1440410808651"
+															title="F-102 LSA Application for Certificate of Airworthiness">
+															F-102 LSA Application for Certificate of Airworthiness
+														</option>
+
+														<option value="1440410809357"
+															title="F-103 LSA Application for Certificate of Authorization">
+															F-103 LSA Application for Certificate of Authorization
+														</option>
+
+														<option value="1440410809564"
+															title="F-104 LSA Life Limited Component Part Status">
+															F-104 LSA Life Limited Component Part Status
+														</option>
+
+														<option value="1440410809627"
+															title="F-105 LSA Major Repairs &amp; Alterations Record">
+															F-105 LSA Major Repairs &amp; Alterations Record
+														</option>
+
+														<option value="1440408609631" title="FORM Part 151">
+															FORM Part 151
+														</option>
+
+														<option value="1440406393909"
+															title="Form 110-2 Foreign Operator (Private 91) (Revised 02/2009)">
+															Form 110-2 Foreign Operator (Private 91) (Revised 02/2009)
+														</option>
+
+														<option value="1440406397052"
+															title="Form 206 (F) Data Sheet for Foreign Operators (revised 07/2008)">
+															Form 206 (F) Data Sheet for Foreign Operators (revised
+															07/2008)
+														</option>
+
+														<option value="1440406394549"
+															title="Form 8400-6 Pre-Application Statement oF Intent S&amp;ER (Revised 11/2007)">
+															Form 8400-6 Pre-Application Statement oF Intent S&amp;ER
+															(Revised 11/2007)
+														</option>
+
+														<option value="1440408953087" title="GACA Form 8710">
+															GACA Form 8710
+														</option>
+
+														<option value="1440409822706"
+															title="GACAR Part 91 C of A Appliaction">
+															GACAR Part 91 C of A Appliaction
+														</option>
+
+														<option value="1440407423457"
+															title="GROUND SERVICES PERSONNEL WORK PERMIT">
+															GROUND SERVICES PERSONNEL WORK PERMIT
+														</option>
+
+														<option value="1440409326076"
+															title="Mechanic's Application for Inspection Authorization">
+															Mechanic's Application for Inspection Authorization
+														</option>
+
+														<option value="1440407118047" title="Obstacle Evaluation Form">
+															Obstacle Evaluation Form
+														</option>
+
+														<option value="1440407118242" title="Petition form">
+															Petition form
+														</option>
+
+														<option value="1440407176283"
+															title="SMS Acceptance Application Form">
+															SMS Acceptance Application Form
+														</option>
+
+														<option value="1440407079527"
+															title="SS&amp;AT_FAOD_F_01_V 1.0 ( Latter of Compliance ) ">
+															SS&amp;AT_FAOD_F_01_V 1.0 ( Latter of Compliance )
+														</option>
+
+														<option value="1440407079567"
+															title="SS&amp;AT_FAOD_F_02_V 1.0 ( Data Sheet )">
+															SS&amp;AT_FAOD_F_02_V 1.0 ( Data Sheet )
+														</option>
+
+														<option value="1440407079609"
+															title="SS&amp;AT_FAOD_F_03_V 1.0 ( History of Aircraft )">
+															SS&amp;AT_FAOD_F_03_V 1.0 ( History of Aircraft )
+														</option>
+
+														<option value="1440407074102"
+															title="SS&amp;AT_FO_F-400D1_V1.0_(01-Mar-2016)">
+															SS&amp;AT_FO_F-400D1_V1.0_(01-Mar-2016)
+														</option>
+
+														<option value="1440410326976"
+															title="Security Clearance request form">
+															Security Clearance request form
+														</option>
+
+														<option value="1440407069190" title="Signtures Form">
+															Signtures Form
+														</option>
+
+														<option value="1440408947505" title="Signtures Form ">
+															Signtures Form
+														</option>
+
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="mx-5">
+											<div class="d-flex align-items-center flex-column">
+												<div class="formAdded-title">
+													<h4>Mandatory</h4>
+												</div>
+												<div>
+													<input type="radio" value="mandatory" name="mandatoryForm">
+												</div>
+											</div>
+										</div>
+										<div class="mx-5">
+											<div class="d-flex align-items-center flex-column">
+												<div class="formAdded-title">
+													<h4>Optional</h4>
+												</div>
+												<div>
+													<input type="radio" value="optional" name="mandatoryForm">
+												</div>
+											</div>
+										</div>
+										<div class="mx-5">
+
+
+
+											<button class="formAdded-btn"
+												onclick="addRequiredForm('Remove','Mandatory','Optional')"
+												type="button">Add</button>
+										</div>
+									</div>
+
+									<br>
+									<div id="formsList">
+
+									</div>
+
+									<div class="d-flex align-items-center mt-5">
+										<div>
+											<img src="./images/RequiredDocuments.png" alt="Required Documents">
+										</div>
+										<div class="mx-3 pagesubtitle">
+											<span style="font-size: 1.5rem;">Required Documents</span>
+										</div>
+									</div>
+									<div class="d-flex align-items-center mt-5">
+										<div class="w-50 me-5">
+											<div class="d-flex align-items-center flex-column">
+												<div class="w-100 formAdded-title">
+													<h4>Document</h4>
+												</div>
+												<div class="w-100">
+													<select id="documentId" class="form-select">
+														<option value="" selected="">Select</option>
+
+														<option value="1440409918714" title=" Certification Plan">
+															Certification Plan
+														</option>
+
+														<option value="1440410147442"
+															title=" Copy of Saudi National ID card / Residency permit">
+															Copy of Saudi National ID card / Residency permit
+														</option>
+
+														<option value="1440406377924"
+															title=" Copy of approved flight manual including RVSM, BRNAV, RNP1, RNP5, RNP10, NAT/MNPS">
+															Copy of approved flight manual including RVSM, BRNAV, RNP1,
+															RNP5, RNP...
+														</option>
+
+														<option value="1440410723771"
+															title=" Evidence that the applicant meets all eligibility requirements shown in GACA eBook Volume 14 listed in paragraph 14.7.2.7 (Domestic) or 14.7.2.11(Foreign).">
+															Evidence that the applicant meets all eligibility
+															requirements shown ...
+														</option>
+
+														<option value="1440407083493"
+															title="(2) copies of amended TCOs / Syllabuses / Curriculums">
+															(2) copies of amended TCOs / Syllabuses / Curriculums
+														</option>
+
+														<option value="1440410772139" title="(MISR) Report">
+															(MISR) Report
+														</option>
+
+														<option value="1440406376756"
+															title="2 copies of the updated Manual/Program">
+															2 copies of the updated Manual/Program
+														</option>
+
+														<option value="1440407085986"
+															title="4 Recent photos 3cmX3cm with white background">
+															4 Recent photos 3cmX3cm with white background
+														</option>
+
+														<option value="1440407282231"
+															title="A certificate issued by a certified public accountant  for companies (business corporation auditor)">
+															A certificate issued by a certified public accountant for
+															companies (...
+														</option>
+
+														<option value="1440406377796"
+															title="A copy of the leasing contract (in case of changing the address).">
+															A copy of the leasing contract (in case of changing the
+															address).
+														</option>
+
+														<option value="1440406377548"
+															title="A cover letter from Employer signed and stamped.">
+															A cover letter from Employer signed and stamped.
+														</option>
+
+														<option value="1440406375804"
+															title="A current and valid GACA medical certificate.">
+															A current and valid GACA medical certificate.
+														</option>
+
+														<option value="1440406375980"
+															title="A drawing sketch of the new location.">
+															A drawing sketch of the new location.
+														</option>
+
+														<option value="1440406376396"
+															title="A leasing contract by the new owner.">
+															A leasing contract by the new owner.
+														</option>
+
+														<option value="1440407373879"
+															title="A nomination for DER involvement for a specific project.">
+															A nomination for DER involvement for a specific project.
+														</option>
+
+														<option value="1440409924648"
+															title="A separate statement of compliance upon completion of regulatory showings to  applicable airworthiness requirements of the eligible product.">
+															A separate statement of compliance upon completion of
+															regulatory showi...
+														</option>
+
+														<option value="1440410903862"
+															title="A statement of conformance certifying that the applicant has met the requirements of GACAR Part 21 subpart J and that the article concerned meets the applicable TSO (*)">
+															A statement of conformance certifying that the applicant has
+															met the r...
+														</option>
+
+														<option value="1440407120543"
+															title="A written statement from the owner confirming that the aircraft's registration marking, aircraft Certificate of Registration (C of R), Certificate of Airworthiness (C of A) and Radio License have b">
+															A written statement from the owner confirming that the
+															aircraft's regi...
+														</option>
+
+														<option value="1440407120426"
+															title="A written statement made or endorsed by GACA Fees and Charges Department confirming that aircraft deregistration fee has been paid. ">
+															A written statement made or endorsed by GACA Fees and
+															Charges Departme...
+														</option>
+
+														<option value="1440407120259"
+															title="A written statement made or endorsed by GACA Fees and Charges Department confirming that there is no un-released liens or unsettled payments against the aircraft. ">
+															A written statement made or endorsed by GACA Fees and
+															Charges Departme...
+														</option>
+
+														<option value="1440408931417"
+															title="AMP airworthiness monitoring program">
+															AMP airworthiness monitoring program
+														</option>
+
+														<option value="1440409447158"
+															title="Acceptance of Air Operator Security Program (AOSP)">
+															Acceptance of Air Operator Security Program (AOSP)
+														</option>
+
+														<option value="1440406375788"
+															title="Advertisement in a daily newspaper">
+															Advertisement in a daily newspaper
+														</option>
+
+														<option value="1440406377220"
+															title="Advertisement in a daily newspaper (For Accredited)">
+															Advertisement in a daily newspaper (For Accredited)
+														</option>
+
+														<option value="1440406377500"
+															title="Advertisement in a daily newspaper about the transfer of ownership">
+															Advertisement in a daily newspaper about the transfer of
+															ownership
+														</option>
+
+														<option value="1440407453810" title="Aerodrome Manual">
+															Aerodrome Manual
+														</option>
+
+														<option value="1440410324234"
+															title="Aeronautical Experience (Logbook)">
+															Aeronautical Experience (Logbook)
+														</option>
+
+														<option value="1440406377668" title="Aeronautical Studies">
+															Aeronautical Studies
+														</option>
+
+														<option value="1440406376404"
+															title="Air Traffic Control Advanced Course as required for license.">
+															Air Traffic Control Advanced Course as required for license.
+														</option>
+
+														<option value="1440406376628"
+															title="Air operating certificate (AOC) for foreign Air Carriers">
+															Air operating certificate (AOC) for foreign Air Carriers
+														</option>
+
+														<option value="1440406377420"
+															title="Aircraft Airframe &amp; Power Plant work experience Log, authenticated.">
+															Aircraft Airframe &amp; Power Plant work experience Log,
+															authenticated.
+														</option>
+
+														<option value="1440407086581"
+															title="Aircraft Bill of Sale or any evidence of ownership">
+															Aircraft Bill of Sale or any evidence of ownership
+														</option>
+
+														<option value="1440408931147" title="Aircraft C of A">
+															Aircraft C of A
+														</option>
+
+														<option value="1440408931124" title="Aircraft C of R">
+															Aircraft C of R
+														</option>
+
+														<option value="1440406377060"
+															title="Aircraft Certificate of Insurance">
+															Aircraft Certificate of Insurance
+														</option>
+
+														<option value="1440406377444"
+															title="Aircraft Certificate of Registration">
+															Aircraft Certificate of Registration
+														</option>
+
+														<option value="1440406376524"
+															title="Aircraft Leasing agreement (if applicable)">
+															Aircraft Leasing agreement (if applicable)
+														</option>
+
+														<option value="1440406375716"
+															title="Aircraft Noise Certificate">
+															Aircraft Noise Certificate
+														</option>
+
+														<option value="1440406377580"
+															title="Aircraft acceptance flight for used or new aircraft">
+															Aircraft acceptance flight for used or new aircraft
+														</option>
+
+														<option value="1440406376884" title="Aircraft checklist">
+															Aircraft checklist
+														</option>
+
+														<option value="1440406377316" title="Aircraft ownership letter">
+															Aircraft ownership letter
+														</option>
+
+														<option value="1440406376028"
+															title="Aircraft permanent records and logbooks (Including Last Maintenance Release)">
+															Aircraft permanent records and logbooks (Including Last
+															Maintenance Re...
+														</option>
+
+														<option value="1440406376620"
+															title="Aircraft production test flight record for new aircraft">
+															Aircraft production test flight record for new aircraft
+														</option>
+
+														<option value="1440408930998"
+															title="Aircraft prove of ownership or long term lease agreement ">
+															Aircraft prove of ownership or long term lease agreement
+														</option>
+
+														<option value="1440406377588"
+															title="Aircraftâ€™s ownership history">
+															Aircraftâ€™s ownership history
+														</option>
+
+														<option value="1440410324336"
+															title="Airman Certificate Flight Instructor">
+															Airman Certificate Flight Instructor
+														</option>
+
+														<option value="1440410323964" title="Airman Certificate Pilot ">
+															Airman Certificate Pilot
+														</option>
+
+														<option value="1440406375852"
+															title="Airman Certificate and Medical Certificate for each flight crew member included.">
+															Airman Certificate and Medical Certificate for each flight
+															crew member...
+														</option>
+
+														<option value="1440406377996" title="Airman logbook for Pilot">
+															Airman logbook for Pilot
+														</option>
+
+														<option value="1440407454213"
+															title="Airport Emergency Plan Manual">
+															Airport Emergency Plan Manual
+														</option>
+
+														<option value="1440409913778"
+															title="An undertaking from the holder of the TC to provide GACA with continuing airworthiness data.">
+															An undertaking from the holder of the TC to provide GACA
+															with continui...
+														</option>
+
+														<option value="1440407764658"
+															title="Applicantâ€™s photo (in JPG format)">
+															Applicantâ€™s photo (in JPG format)
+														</option>
+
+														<option value="1440407764406"
+															title="Application form duly completed and signed by all parties (in PDF format)">
+															Application form duly completed and signed by all parties
+															(in PDF form...
+														</option>
+
+														<option value="1440406376716" title="Application letter">
+															Application letter
+														</option>
+
+														<option value="1440406376852"
+															title="Application letter directed to the Economic Regulation Department General Manager. ">
+															Application letter directed to the Economic Regulation
+															Department Gene...
+														</option>
+
+														<option value="1440406375676"
+															title="Application letter for cancelling the license and commercial register of the Air Cargo agency directed to the Economic Regulation Department General Manager. ">
+															Application letter for cancelling the license and commercial
+															register ...
+														</option>
+
+														<option value="1440406377492"
+															title="Application letter for changing the name or address of the Air Cargo agency directed to the Economic Regulation Department General Manager. ">
+															Application letter for changing the name or address of the
+															Air Cargo a...
+														</option>
+
+														<option value="1440406375732"
+															title="Application letter for ownership transfer of the Air Cargo agency directed to the Economic Regulation Department General Manager. ">
+															Application letter for ownership transfer of the Air Cargo
+															agency dire...
+														</option>
+
+														<option value="1440410438603"
+															title="Application letter for the required adjustments addressed to the Foreign Air Operator Department Manager">
+															Application letter for the required adjustments addressed to
+															the Forei...
+														</option>
+
+														<option value="1440406377916"
+															title="Application letter to the Agreements and Authorization GM">
+															Application letter to the Agreements and Authorization GM
+														</option>
+
+														<option value="1440406378148"
+															title="Application letter which includes the payment code of the applicant">
+															Application letter which includes the payment code of the
+															applicant
+														</option>
+
+														<option value="1440409916765"
+															title="Approval from GACA President to initiate the project.">
+															Approval from GACA President to initiate the project.
+														</option>
+
+														<option value="1440410887517"
+															title="Approval privileges document (FAA ACO Agreement, FAA ODA, EASA Design Organization Approval, or equivalent) (if applicable).).  ">
+															Approval privileges document (FAA ACO Agreement, FAA ODA,
+															EASA Design ...
+														</option>
+
+														<option value="1440409917357"
+															title="Approval privileges document (FAA ACO Minor Change Agreement, EASA Design Organization Approval, or equivalent) (if applicable).">
+															Approval privileges document (FAA ACO Minor Change
+															Agreement, EASA Des...
+														</option>
+
+														<option value="1440410882893"
+															title="Approval privileges document (NAA Design Organization Approval, or equivalent).">
+															Approval privileges document (NAA Design Organization
+															Approval, or equ...
+														</option>
+
+														<option value="1440406377076"
+															title="Approved Aircraft Type Training Course.">
+															Approved Aircraft Type Training Course.
+														</option>
+
+														<option value="1440406377436"
+															title="Aviation Medicine Training Certificates ">
+															Aviation Medicine Training Certificates
+														</option>
+
+														<option value="1440406378004"
+															title="CD contains all docs related to Aircraft maintenance">
+															CD contains all docs related to Aircraft maintenance
+														</option>
+
+														<option value="1440407175833"
+															title="CV of Director Safety/SMS Manager">
+															CV of Director Safety/SMS Manager
+														</option>
+
+														<option value="1440406376684"
+															title="Candidate (Airman) Profile">
+															Candidate (Airman) Profile
+														</option>
+
+														<option value="1440406376732"
+															title="Capability listing with revision date and number ">
+															Capability listing with revision date and number
+														</option>
+
+														<option value="1440406377460"
+															title="Certificate of Airworthiness (C of A)">
+															Certificate of Airworthiness (C of A)
+														</option>
+
+														<option value="1440407393871" title="Certificate of Origin">
+															Certificate of Origin
+														</option>
+
+														<option value="1440409925302" title="Certification Plan">
+															Certification Plan
+														</option>
+
+														<option value="1440406376188" title="Charts and drawings">
+															Charts and drawings
+														</option>
+
+														<option value="1440406377396"
+															title="Classification Binder. Two dividers (smear red pressboard)">
+															Classification Binder. Two dividers (smear red pressboard)
+														</option>
+
+														<option value="1440406376236" title="Commercial register">
+															Commercial register
+														</option>
+
+														<option value="1440407085064"
+															title="Commercially produced syllabuses. ">
+															Commercially produced syllabuses.
+														</option>
+
+														<option value="1440410887556"
+															title="Company Manual (Handbook, Procedures, Work Instructions) related to the intended certification activities.">
+															Company Manual (Handbook, Procedures, Work Instructions)
+															related to th...
+														</option>
+
+														<option value="1440409925353"
+															title="Compliance Checklist or Matrix">
+															Compliance Checklist or Matrix
+														</option>
+
+														<option value="1440407372897" title="Compliance Checklist.">
+															Compliance Checklist.
+														</option>
+
+														<option value="1440408557190"
+															title="Compliance statements with Saudi Aviation Law, GACAR Part129 and ICAO standards">
+															Compliance statements with Saudi Aviation Law, GACAR Part129
+															and ICAO ...
+														</option>
+
+														<option value="1440407086738"
+															title="Confirmation from C.A. Authority of the country (in which the aircraft was registered) on deregistration or that it has never been entered on A/C registry">
+															Confirmation from C.A. Authority of the country (in which
+															the aircraft...
+														</option>
+
+														<option value="1440407764609" title="Confirmation of payment ">
+															Confirmation of payment
+														</option>
+
+														<option value="1440409919011" title="Continued Airworthiness Data:
+(a) Instructions for Continued Airworthiness.
+(b) Airworthiness Limitations.
+(c) Electrical Wiring Interconnection System (EWIS) Instructions.">
+															Continued Airworthiness Data:
+															(a) Instructions for Continued Airworthi...
+														</option>
+
+														<option value="1440406376444" title="Contract endorsed by MOCI">
+															Contract endorsed by MOCI
+														</option>
+
+														<option value="1440406377892"
+															title="Contract or allegiance certified by an official authority (Notary - Chamber of Commerce).">
+															Contract or allegiance certified by an official authority
+															(Notary - Ch...
+														</option>
+
+														<option value="1440406376924"
+															title="Coordinates WGS-48 with Google map">
+															Coordinates WGS-48 with Google map
+														</option>
+
+														<option value="1440406377532"
+															title="Copies of all foreign pilot certificate.">
+															Copies of all foreign pilot certificate.
+														</option>
+
+														<option value="1440406377124"
+															title="Copies of licenses and training for authorized personnel">
+															Copies of licenses and training for authorized personnel
+														</option>
+
+														<option value="1440406377372"
+															title="Copy of ATS Unit Successful completion On The Job Training Report minimum 90 days.">
+															Copy of ATS Unit Successful completion On The Job Training
+															Report mini...
+														</option>
+
+														<option value="1440406377988"
+															title="Copy of Aircraft certificate of registration (C of R)">
+															Copy of Aircraft certificate of registration (C of R)
+														</option>
+
+														<option value="1440406376276"
+															title="Copy of Aircraft radio license">
+															Copy of Aircraft radio license
+														</option>
+
+														<option value="1440407080700"
+															title="Copy of ELP Level Certification">
+															Copy of ELP Level Certification
+														</option>
+
+														<option value="1440406377820"
+															title="Copy of FAA / EASA certificates">
+															Copy of FAA / EASA certificates
+														</option>
+
+														<option value="1440407083880"
+															title="Copy of Fee Payment Receipt">
+															Copy of Fee Payment Receipt
+														</option>
+
+														<option value="1440407075072"
+															title="Copy of Foreign Certificate">
+															Copy of Foreign Certificate
+														</option>
+
+														<option value="1440407124529" title="Copy of Foreign License">
+															Copy of Foreign License
+														</option>
+
+														<option value="1440407081661"
+															title="Copy of GACA Aircraft Dispatcher Certificate">
+															Copy of GACA Aircraft Dispatcher Certificate
+														</option>
+
+														<option value="1440406377692" title="Copy of GACA Certificate">
+															Copy of GACA Certificate
+														</option>
+
+														<option value="1440407081391"
+															title="Copy of Graduation Certificate">
+															Copy of Graduation Certificate
+														</option>
+
+														<option value="1440407080648"
+															title="Copy of High School Diploma">
+															Copy of High School Diploma
+														</option>
+
+														<option value="1440406376300"
+															title="Copy of ICAO Member of State License.">
+															Copy of ICAO Member of State License.
+														</option>
+
+														<option value="1440406378028" title="Copy of Log book sequence">
+															Copy of Log book sequence
+														</option>
+
+														<option value="1440406377556" title="Copy of MEL reference">
+															Copy of MEL reference
+														</option>
+
+														<option value="1440407080811"
+															title="Copy of Medical Certificate">
+															Copy of Medical Certificate
+														</option>
+
+														<option value="1440407764464"
+															title="Copy of Passport (in PDF format)">
+															Copy of Passport (in PDF format)
+														</option>
+
+														<option value="1440407084743"
+															title="Copy of Pilot Foreign Certificate">
+															Copy of Pilot Foreign Certificate
+														</option>
+
+														<option value="1440407084921"
+															title="Copy of Pilotâ€™s Medical Certificate">
+															Copy of Pilotâ€™s Medical Certificate
+														</option>
+
+														<option value="1440407085730"
+															title="Copy of Saudi GACA Airman Certificate">
+															Copy of Saudi GACA Airman Certificate
+														</option>
+
+														<option value="1440406376652"
+															title="Copy of Saudi ID / Residency permit">
+															Copy of Saudi ID / Residency permit
+														</option>
+
+														<option value="1440407075214"
+															title="Copy of Saudi National ID card / Residency permit">
+															Copy of Saudi National ID card / Residency permit
+														</option>
+
+														<option value="1440407764450"
+															title="Copy of Saudi National ID or Iqama (in PDF format)">
+															Copy of Saudi National ID or Iqama (in PDF format)
+														</option>
+
+														<option value="1440409896997"
+															title="Copy of TC/TCDS or equivalent document issued by GACA recognized foreign NAA.">
+															Copy of TC/TCDS or equivalent document issued by GACA
+															recognized forei...
+														</option>
+
+														<option value="1440406376740"
+															title="Copy of adequate experience on same rating(s) applied">
+															Copy of adequate experience on same rating(s) applied
+														</option>
+
+														<option value="1440406376548"
+															title="Copy of aircraft/ engine maintenance">
+															Copy of aircraft/ engine maintenance
+														</option>
+
+														<option value="1440406375812"
+															title="Copy of all paper work to be send to GACA E-Mail SER-CLD@gaca.gov.sa">
+															Copy of all paper work to be send to GACA E-Mail
+															SER-CLD@gaca.gov.sa
+														</option>
+
+														<option value="1440407764421"
+															title="Copy of all relevant training certificates (in PDF format)">
+															Copy of all relevant training certificates (in PDF format)
+														</option>
+
+														<option value="1440407088041"
+															title="Copy of approved flight manual including RVSM, BRNAV, RNP1, RNP5, RNP10, NAT/MNPS">
+															Copy of approved flight manual including RVSM, BRNAV, RNP1,
+															RNP5, RNP1...
+														</option>
+
+														<option value="1440410926129"
+															title="Copy of current FAA DAR delegation including copies of the current FAA Certificate of Authorization (or equivalent documentation issued by GACA Recognized Foreign NAA).">
+															Copy of current FAA DAR delegation including copies of the
+															current FAA...
+														</option>
+
+														<option value="1440409925904"
+															title="Copy of current FAA DER delegation including copies of the current FAA Certificate of Authorization (or equivalent documentation issued by GACA Recognized Foreign NAA).">
+															Copy of current FAA DER delegation including copies of the
+															current FAA...
+														</option>
+
+														<option value="1440406376452"
+															title="Copy of expired or Damaged License.">
+															Copy of expired or Damaged License.
+														</option>
+
+														<option value="1440406377660" title="Copy of flight manual">
+															Copy of flight manual
+														</option>
+
+														<option value="1440406376492"
+															title="Copy of foreign license/certificate">
+															Copy of foreign license/certificate
+														</option>
+
+														<option value="1440409823504"
+															title="Copy of last maintenance release">
+															Copy of last maintenance release
+														</option>
+
+														<option value="1440406377244"
+															title="Copy of management Resumes">
+															Copy of management Resumes
+														</option>
+
+														<option value="1440407075196"
+															title="Copy of official receipt showing payment of fee">
+															Copy of official receipt showing payment of fee
+														</option>
+
+														<option value="1440406377188"
+															title="Copy of personnel qualifications">
+															Copy of personnel qualifications
+														</option>
+
+														<option value="1440406377852"
+															title="Copy of previous Saudi GACA Airman Certificate">
+															Copy of previous Saudi GACA Airman Certificate
+														</option>
+
+														<option value="1440407764543"
+															title="Copy of signature of employee (in PDF format)">
+															Copy of signature of employee (in PDF format)
+														</option>
+
+														<option value="1440406377348"
+															title="Copy of social insurance certificate">
+															Copy of social insurance certificate
+														</option>
+
+														<option value="1440406377324" title="Copy of structure repair">
+															Copy of structure repair
+														</option>
+
+														<option value="1440407764529"
+															title="Copy of the Airport Security badge (in PDF format)">
+															Copy of the Airport Security badge (in PDF format)
+														</option>
+
+														<option value="1440406376876"
+															title="Copy of the Certificate of Registration ">
+															Copy of the Certificate of Registration
+														</option>
+
+														<option value="1440406377516"
+															title="Copy of the Letter of authorization to use MMEL for GACA Part 91">
+															Copy of the Letter of authorization to use MMEL for GACA
+															Part 91
+														</option>
+
+														<option value="1440406376084" title="Copy of the Radio license">
+															Copy of the Radio license
+														</option>
+
+														<option value="1440406375780"
+															title="Copy of the commercial register">
+															Copy of the commercial register
+														</option>
+
+														<option value="1440406376468"
+															title="Copy of the commercial register required to be cancelled">
+															Copy of the commercial register required to be cancelled
+														</option>
+
+														<option value="1440406376796"
+															title="Copy of the contract with Aircraft Operator">
+															Copy of the contract with Aircraft Operator
+														</option>
+
+														<option value="1440406377628"
+															title="Copy of the flight plan that shows the original rout of the trip">
+															Copy of the flight plan that shows the original rout of the
+															trip
+														</option>
+
+														<option value="1440406376908"
+															title="Copy of the last audit performed and reported by an external auditor">
+															Copy of the last audit performed and reported by an external
+															auditor
+														</option>
+
+														<option value="1440406375700"
+															title="Copy of the last self-audit performed within the company">
+															Copy of the last self-audit performed within the company
+														</option>
+
+														<option value="1440406378100"
+															title="Copy of the leasing agreement ( in case of operating a leased aircraft)">
+															Copy of the leasing agreement ( in case of operating a
+															leased aircraft...
+														</option>
+
+														<option value="1440407416562"
+															title="Copy of the location of the heliport through google map">
+															Copy of the location of the heliport through google map
+														</option>
+
+														<option value="1440406376772"
+															title="Copy of the new ownerÂ´s ID.">
+															Copy of the new ownerÂ´s ID.
+														</option>
+
+														<option value="1440407282243"
+															title="Copy of the original license">
+															Copy of the original license
+														</option>
+
+														<option value="1440406377636"
+															title="Copy of the proof of fee payment">
+															Copy of the proof of fee payment
+														</option>
+
+														<option value="1440407416442"
+															title="Copy of the region Emirah approval ">
+															Copy of the region Emirah approval
+														</option>
+
+														<option value="1440406377044"
+															title="Copy of the technical log page that shows the technical discrepancy">
+															Copy of the technical log page that shows the technical
+															discrepancy
+														</option>
+
+														<option value="1440406376220"
+															title="Copy of training on same rating(s) applied">
+															Copy of training on same rating(s) applied
+														</option>
+
+														<option value="1440406378036"
+															title="Copy of valid GACA Mechanic License">
+															Copy of valid GACA Mechanic License
+														</option>
+
+														<option value="1440406377356" title="Copy of valid ID">
+															Copy of valid ID
+														</option>
+
+														<option value="1440410862902" title="Copy of valid IQAMA">
+															Copy of valid IQAMA
+														</option>
+
+														<option value="1440406375884"
+															title="Copy of valid Zakat and Income certificate">
+															Copy of valid Zakat and Income certificate
+														</option>
+
+														<option value="1440407575906"
+															title="Copy of valid and current GACA Certificate">
+															Copy of valid and current GACA Certificate
+														</option>
+
+														<option value="1440406378060"
+															title="Copy of valid commercial register">
+															Copy of valid commercial register
+														</option>
+
+														<option value="1440406376988"
+															title="Copy of valid medical certificate (Issued by the Medical Aviation Section based on the Issuance/Renewal of Medical Certificates e-Service)">
+															Copy of valid medical certificate (Issued by the Medical
+															Aviation Sect...
+														</option>
+
+														<option value="1440406375660" title="Copy of valid passport">
+															Copy of valid passport
+														</option>
+
+														<option value="1440406377428"
+															title="Copy of weight and Balance">
+															Copy of weight and Balance
+														</option>
+
+														<option value="1440409823368"
+															title="Copy of weight and Balance and Equipment list">
+															Copy of weight and Balance and Equipment list
+														</option>
+
+														<option value="1440406375708" title="Copy of wiring diagram">
+															Copy of wiring diagram
+														</option>
+
+														<option value="1440406377116"
+															title="Currency Check for each flight crew member involved.">
+															Currency Check for each flight crew member involved.
+														</option>
+
+														<option value="1440406375988"
+															title="Current copy of aircraft equipment list including communication, navigation and RVSM equipment">
+															Current copy of aircraft equipment list including
+															communication, navig...
+														</option>
+
+														<option value="1440406376508"
+															title="Current copy of the repair station certificate (FAA /EASA or CAA) including the operations specifications, rating(s) and capability list.">
+															Current copy of the repair station certificate (FAA /EASA or
+															CAA) incl...
+														</option>
+
+														<option value="1440408931349" title="Customized MEL">
+															Customized MEL
+														</option>
+
+														<option value="1440410403518"
+															title="Data Package should include ((*) see additional Help)">
+															Data Package should include ((*) see additional Help)
+														</option>
+
+														<option value="1440408555712" title="Data Sheet ">
+															Data Sheet
+														</option>
+
+														<option value="1440406377140"
+															title="Delegation of authority (in the case the request done by the agent or representative)">
+															Delegation of authority (in the case the request done by the
+															agent or ...
+														</option>
+
+														<option value="1440407394026"
+															title="Deregistration (if the aircraft was previously registered)">
+															Deregistration (if the aircraft was previously registered)
+														</option>
+
+														<option value="1440409917267"
+															title="Design change classification document issued in accordance with FAR Â§21.93 (a)&amp;(b) or EASA 21A.91. ">
+															Design change classification document issued in accordance
+															with FAR Â§...
+														</option>
+
+														<option value="1440410887220"
+															title="Design change classification document issued in accordance with GACAR Â§21.66 (equivalent to FAR Â§21.93 (a)&amp;(b) or EASA 21A.91).  ">
+															Design change classification document issued in accordance
+															with GACAR ...
+														</option>
+
+														<option value="1440408948481"
+															title="Digital Personal Picture(White Background). In JPG Format">
+															Digital Personal Picture(White Background). In JPG Format
+														</option>
+
+														<option value="1440407070447"
+															title="Digital Picture ( jpg) (un cover head- white background)">
+															Digital Picture ( jpg) (un cover head- white background)
+														</option>
+
+														<option value="1440407080684"
+															title="Digital Signature (Authorized GACA Signature Form)">
+															Digital Signature (Authorized GACA Signature Form)
+														</option>
+
+														<option value="1440407070701" title="Digital Signature (jpg)">
+															Digital Signature (jpg)
+														</option>
+
+														<option value="1440408931178" title="Director of operations CV">
+															Director of operations CV
+														</option>
+
+														<option value="1440409924520" title="Draft SAPMA supplement">
+															Draft SAPMA supplement
+														</option>
+
+														<option value="1440406377276"
+															title="Drawing sketch of the officeâ€™s location">
+															Drawing sketch of the officeâ€™s location
+														</option>
+
+														<option value="1440408948580"
+															title="E-Signature in jpg format.">
+															E-Signature in jpg format.
+														</option>
+
+														<option value="1440406377476" title="ELT Registration">
+															ELT Registration
+														</option>
+
+														<option value="1440406376980" title="Economic license.">
+															Economic license.
+														</option>
+
+														<option value="1440406376500" title="Electrical load analysis">
+															Electrical load analysis
+														</option>
+
+														<option value="1440407175570"
+															title="Emergency Response Plan (ERP)">
+															Emergency Response Plan (ERP)
+														</option>
+
+														<option value="1440406376836"
+															title="Employer Recommendation For the special list work related signed and stamped.">
+															Employer Recommendation For the special list work related
+															signed and s...
+														</option>
+
+														<option value="1440406377716"
+															title="English Language Proficiency Certificate minimum level (4).">
+															English Language Proficiency Certificate minimum level (4).
+														</option>
+
+														<option value="1440406376244"
+															title="English language proficiency (ELP) level test certificate (level-4) or above.">
+															English language proficiency (ELP) level test certificate
+															(level-4) or...
+														</option>
+
+														<option value="1440409916811"
+															title="Estimated project schedule including major milestones">
+															Estimated project schedule including major milestones
+														</option>
+
+														<option value="1440407074574" title="Evidence of Experience">
+															Evidence of Experience
+														</option>
+
+														<option value="1440406376964"
+															title="Evidence of lease or ownership of the office location">
+															Evidence of lease or ownership of the office location
+														</option>
+
+														<option value="1440406377036" title="Evidence of ownership">
+															Evidence of ownership
+														</option>
+
+														<option value="1440409925960"
+															title="Evidence that the applicant evidence that the applicant meets all of the additional requirements listed in paragraph 14.7.2.9 (if applicable).">
+															Evidence that the applicant evidence that the applicant
+															meets all of t...
+														</option>
+
+														<option value="1440409926510"
+															title="Evidence that the applicant meets all eligibility requirements shown in GACA eBook Volume 14 listed in paragraph 14.5.2.7 (Domestic) or 14.5.2.9 (Foreign).">
+															Evidence that the applicant meets all eligibility
+															requirements shown i...
+														</option>
+
+														<option value="1440409925843"
+															title="Evidence that the applicant meets all eligibility requirements shown in GACA eBook Volume 14 listed in paragraph 14.7.2.7 (Domestic) or 14.7.2.11(Foreign).">
+															Evidence that the applicant meets all eligibility
+															requirements shown i...
+														</option>
+
+														<option value="1440406376588"
+															title="Experience and training records">
+															Experience and training records
+														</option>
+
+														<option value="1440406376068"
+															title="Expired Air Cargo License (Original Copy)">
+															Expired Air Cargo License (Original Copy)
+														</option>
+
+														<option value="1440406376036" title="Export C of A">
+															Export C of A
+														</option>
+
+														<option value="1440407086846"
+															title="Export certificate of Airworthiness (if applicable)">
+															Export certificate of Airworthiness (if applicable)
+														</option>
+
+														<option value="1440406375836"
+															title="FAA or JAA Simulator Certificate (if certified)">
+															FAA or JAA Simulator Certificate (if certified)
+														</option>
+
+														<option value="1440407114056"
+															title="Fee payment confirmation by GACA Fees &amp; Charges Department">
+															Fee payment confirmation by GACA Fees &amp; Charges
+															Department
+														</option>
+
+														<option value="1440406378140"
+															title="Fee payment confirmation by GACA Fees &amp; Charges Department.">
+															Fee payment confirmation by GACA Fees &amp; Charges
+															Department.
+														</option>
+
+														<option value="1440406377180" title="Fee payment receipt">
+															Fee payment receipt
+														</option>
+
+														<option value="1440406377268" title="Fire prevention manual">
+															Fire prevention manual
+														</option>
+
+														<option value="1440407064215"
+															title="First Medical Qualification Certificate">
+															First Medical Qualification Certificate
+														</option>
+
+														<option value="1440408948514"
+															title="First and last 4 pages of logbook">
+															First and last 4 pages of logbook
+														</option>
+
+														<option value="1440406376572"
+															title="First page and last 4 pages copy of flight log book.">
+															First page and last 4 pages copy of flight log book.
+														</option>
+
+														<option value="1440406377156"
+															title="Flight authorization application letter">
+															Flight authorization application letter
+														</option>
+
+														<option value="1440406377300" title="Flight schedule  ">
+															Flight schedule
+														</option>
+
+														<option value="1440406376436"
+															title="Flight scheduling application letter">
+															Flight scheduling application letter
+														</option>
+
+														<option value="1440406377020"
+															title="For Foreign License conversion, License verification should be received on GACA E-Mail SER-CLD@gaca.gov.sa from License issued authority before conversion process">
+															For Foreign License conversion, License verification should
+															be receive...
+														</option>
+
+														<option value="1440408948320" title="Foreign Certificate.">
+															Foreign Certificate.
+														</option>
+
+														<option value="1440406377836"
+															title="Four Recent photos 3cmX3cm with a white background">
+															Four Recent photos 3cmX3cm with a white background
+														</option>
+
+														<option value="1440408948140"
+															title="GACA -8710-1 should be completed clearly , accurately, and signed by one of the inspector in case it has not graduated from FAA">
+															GACA -8710-1 should be completed clearly , accurately, and
+															signed by o...
+														</option>
+
+														<option value="1440406375684"
+															title="GACA Air Navigation Services Department (in case of aerial screening)">
+															GACA Air Navigation Services Department (in case of aerial
+															screening)
+														</option>
+
+														<option value="1440406375820"
+															title="GACA Aviation Maintenance Technician.">
+															GACA Aviation Maintenance Technician.
+														</option>
+
+														<option value="1440407373655"
+															title="GACA Form 8110-14 â€œStatement of Qualification (DAR-DER)â€�.">
+															GACA Form 8110-14 â€œStatement of Qualification
+															(DAR-DER)â€�.
+														</option>
+
+														<option value="1440409918530"
+															title="GACA Recognized Foreign NAA Notification Letter addressed to the General Manager of Airworthiness (For ongoing certification project).">
+															GACA Recognized Foreign NAA Notification Letter addressed to
+															the Gener...
+														</option>
+
+														<option value="1440407372666"
+															title="GACA response to the Letter of Intent">
+															GACA response to the Letter of Intent
+														</option>
+
+														<option value="1440408931394"
+															title="GMM general maintenance manual ">
+															GMM general maintenance manual
+														</option>
+
+														<option value="1440408931375"
+															title="GOM general operating manual ">
+															GOM general operating manual
+														</option>
+
+														<option value="1440406376132"
+															title="General operating manual (GOM)">
+															General operating manual (GOM)
+														</option>
+
+														<option value="1440406377732"
+															title="Graduation certificate on Basic Air Traffic Control from a recognized institute by the General Authority of Civil Aviation.">
+															Graduation certificate on Basic Air Traffic Control from a
+															recognized ...
+														</option>
+
+														<option value="1440406376708"
+															title="Hazmat &amp; MSDS Awareness.">
+															Hazmat &amp; MSDS Awareness.
+														</option>
+
+														<option value="1440407064223"
+															title="Higher Medical Qualification Certificate">
+															Higher Medical Qualification Certificate
+														</option>
+
+														<option value="1440406376212" title="Human Factor Awareness.">
+															Human Factor Awareness.
+														</option>
+
+														<option value="1440406376124" title="ID Card">
+															ID Card
+														</option>
+
+														<option value="1440406376788"
+															title="Initial compliance statement">
+															Initial compliance statement
+														</option>
+
+														<option value="1440406376516"
+															title="Inside/outside photo of the officeÂ´s location">
+															Inside/outside photo of the officeÂ´s location
+														</option>
+
+														<option value="1440406377828" title="Insurance certificate">
+															Insurance certificate
+														</option>
+
+														<option value="1440406377524"
+															title="Justification (supporting documents)">
+															Justification (supporting documents)
+														</option>
+
+														<option value="1440407087825"
+															title="Justifications supporting the amendments to the specifications">
+															Justifications supporting the amendments to the
+															specifications
+														</option>
+
+														<option value="1440407175789"
+															title="Key Performance Indicators (KPIs)">
+															Key Performance Indicators (KPIs)
+														</option>
+
+														<option value="1440406377788"
+															title="LOA for RVSM/MNPS, as applicable.">
+															LOA for RVSM/MNPS, as applicable.
+														</option>
+
+														<option value="1440406378012"
+															title="Leasing contract of sites and fields at the airport.">
+															Leasing contract of sites and fields at the airport.
+														</option>
+
+														<option value="1440406376100" title="Letter of Eligibility">
+															Letter of Eligibility
+														</option>
+
+														<option value="1440406376860" title="Letter of Undertaking">
+															Letter of Undertaking
+														</option>
+
+														<option value="1440410742063"
+															title="Letter of application addressed to Air-Carrier manager explained why   maintenance check cannot be performed on time">
+															Letter of application addressed to Air-Carrier manager
+															explained why ...
+														</option>
+
+														<option value="1440410773173"
+															title="Letter of application addressed to Air-Carrier manager explained why maintenance check cannot be performed on time.">
+															Letter of application addressed to Air-Carrier manager
+															explained why m...
+														</option>
+
+														<option value="1440407367555"
+															title="Letter of application addressed to Airworthiness Manager.">
+															Letter of application addressed to Airworthiness Manager.
+														</option>
+
+														<option value="1440410918933"
+															title="Letter of application addressed to General Manager of Airworthiness. See additional help.">
+															Letter of application addressed to General Manager of
+															Airworthiness. S...
+														</option>
+
+														<option value="1440410403771"
+															title="Letter of application addressed to the General Manager of Airworthiness (*).">
+															Letter of application addressed to the General Manager of
+															Airworthines...
+														</option>
+
+														<option value="1440406376316"
+															title="Letter of approval from Governor Office ">
+															Letter of approval from Governor Office
+														</option>
+
+														<option value="1440406375996"
+															title="Letter of authorization for the operation and scheduling of foreign Air Carrierâ€™s flights issued by Economic Regulation Department.">
+															Letter of authorization for the operation and scheduling of
+															foreign Ai...
+														</option>
+
+														<option value="1440406376996"
+															title="Letter of authorization to conduct operations (RVSM, BRNAV, RNPS, RNP10, RNP 1, NAT/MNPS)">
+															Letter of authorization to conduct operations (RVSM, BRNAV,
+															RNPS, RNP1...
+														</option>
+
+														<option value="1440406377804"
+															title="List of Aircraftâ€™s equipment">
+															List of Aircraftâ€™s equipment
+														</option>
+
+														<option value="1440406376804"
+															title="List of current maintenance providers or providers that will be contracted. This shall include copies of their certificates and capability listing">
+															List of current maintenance providers or providers that will
+															be contra...
+														</option>
+
+														<option value="1440406377980" title="List of dangerous goods ">
+															List of dangerous goods
+														</option>
+
+														<option value="1440409924740"
+															title="List of proposed designees and GACA concurrences (if required).">
+															List of proposed designees and GACA concurrences (if
+															required).
+														</option>
+
+														<option value="1440406376116" title="MMEL">
+															MMEL
+														</option>
+
+														<option value="1440408556103"
+															title="Maintenance contract in KSA / Flight engineer on-board ">
+															Maintenance contract in KSA / Flight engineer on-board
+														</option>
+
+														<option value="1440408931201"
+															title="Maintenance coordinator CV">
+															Maintenance coordinator CV
+														</option>
+
+														<option value="1440410438734"
+															title="Maintenance provision confirmation letter">
+															Maintenance provision confirmation letter
+														</option>
+
+														<option value="1440406376476"
+															title="Maintenance technical manual (As applicable)">
+															Maintenance technical manual (As applicable)
+														</option>
+
+														<option value="1440406376372" title="Maintenance tracking list">
+															Maintenance tracking list
+														</option>
+
+														<option value="1440406376532"
+															title="Management qualification resumes">
+															Management qualification resumes
+														</option>
+
+														<option value="1440409920329" title="Master Data List - Draft.">
+															Master Data List - Draft.
+														</option>
+
+														<option value="1440409918798" title="Master Data List.">
+															Master Data List.
+														</option>
+
+														<option value="1440406376140"
+															title="Military Survey Authority (in case of aerial survey/ photography )">
+															Military Survey Authority (in case of aerial survey/
+															photography )
+														</option>
+
+														<option value="1440407085886"
+															title="Military competence documentation for pilot">
+															Military competence documentation for pilot
+														</option>
+
+														<option value="1440406376348"
+															title="Minimum equipment list (MEL)">
+															Minimum equipment list (MEL)
+														</option>
+
+														<option value="1440406376580"
+															title="Ministry of Agriculture (in case of agricultural spraying)">
+															Ministry of Agriculture (in case of agricultural spraying)
+														</option>
+
+														<option value="1440409917312"
+															title="Minor Change Approval issued by GACA Recognized Foreign National Aviation Authorities (For Existing Approved Data).">
+															Minor Change Approval issued by GACA Recognized Foreign
+															National Aviat...
+														</option>
+
+														<option value="1440410323772" title="National ID">
+															National ID
+														</option>
+
+														<option value="1440409913733"
+															title="One full set of operating and maintenance data for the aircraft and its associated engines and propellers.">
+															One full set of operating and maintenance data for the
+															aircraft and it...
+														</option>
+
+														<option value="1440406377844" title="Operation manual">
+															Operation manual
+														</option>
+
+														<option value="1440406377004" title="Operations Specifications">
+															Operations Specifications
+														</option>
+
+														<option value="1440408931224"
+															title="Operationâ€™s Base address and contacts include e-mail ">
+															Operationâ€™s Base address and contacts include e-mail
+														</option>
+
+														<option value="1440406376012"
+															title="Opspecs amendments acceptance issued by Flight Operations Section (in case of newly added Aircraft for additional flight request)">
+															Opspecs amendments acceptance issued by Flight Operations
+															Section (in ...
+														</option>
+
+														<option value="1440406378092"
+															title="Original AME Designation Letter">
+															Original AME Designation Letter
+														</option>
+
+														<option value="1440406376076" title="Original Manual/Program">
+															Original Manual/Program
+														</option>
+
+														<option value="1440407083618"
+															title="Original TCOs / Syllabuses / Curriculums">
+															Original TCOs / Syllabuses / Curriculums
+														</option>
+
+														<option value="1440408582422" title="Other Related Document">
+															Other Related Document
+														</option>
+
+														<option value="1440409917204"
+															title="Owner/Operator acknowledgement for the proposed design change.">
+															Owner/Operator acknowledgement for the proposed design
+															change.
+														</option>
+
+														<option value="1440410887170"
+															title="Owner/operator acknowledgement for the proposed design change.">
+															Owner/operator acknowledgement for the proposed design
+															change.
+														</option>
+
+														<option value="1440410924025"
+															title="Owner/operator acknowledgement for the proposed reapair design">
+															Owner/operator acknowledgement for the proposed reapair
+															design
+														</option>
+
+														<option value="1440409924474"
+															title="Part Specific Certification Plan (PartSCP)">
+															Part Specific Certification Plan (PartSCP)
+														</option>
+
+														<option value="1440408948173" title="Passport.">
+															Passport.
+														</option>
+
+														<option value="1440406377468"
+															title="Payment cheque with the amount of (SR 1,000) accredited by GACA.">
+															Payment cheque with the amount of (SR 1,000) accredited by
+															GACA.
+														</option>
+
+														<option value="1440406376812"
+															title="Payment cheque with the amount of (SR 2,000) accredited by GACA.">
+															Payment cheque with the amount of (SR 2,000) accredited by
+															GACA.
+														</option>
+
+														<option value="1440407080666"
+															title="Photo (Colour with White background) Head must be uncovered">
+															Photo (Colour with White background) Head must be uncovered
+														</option>
+
+														<option value="1440406377860"
+															title="Picture showing Aircraft markings, registration and data plate">
+															Picture showing Aircraft markings, registration and data
+															plate
+														</option>
+
+														<option value="1440407084790"
+															title="Pilotâ€™s certificate verification">
+															Pilotâ€™s certificate verification
+														</option>
+
+														<option value="1440410147403" title="Power of attorney.">
+															Power of attorney.
+														</option>
+
+														<option value="1440409920379"
+															title="Preliminary Certification Data (as applicable) includes, but is not limited to: Ground/Flight Test plans and reports, Analyses (e.g. Electrical Load Analysis (ELA), Structural Analysis, System Safety)">
+															Preliminary Certification Data (as applicable) includes, but
+															is not li...
+														</option>
+
+														<option value="1440407367747"
+															title="Preliminary Certification plan including basis of certification.">
+															Preliminary Certification plan including basis of
+															certification.
+														</option>
+
+														<option value="1440407372712"
+															title="Preliminary Certification plan.">
+															Preliminary Certification plan.
+														</option>
+
+														<option value="1440407367775"
+															title="Preliminary Compliance Checklist.">
+															Preliminary Compliance Checklist.
+														</option>
+
+														<option value="1440410899489"
+															title="Preliminary Continued Airworthiness Data, Airworthiness Limitations">
+															Preliminary Continued Airworthiness Data, Airworthiness
+															Limitations
+														</option>
+
+														<option value="1440410899953"
+															title="Preliminary Continued Airworthiness Data, Certification Maintenance Requirements">
+															Preliminary Continued Airworthiness Data, Certification
+															Maintenance Re...
+														</option>
+
+														<option value="1440410899834"
+															title="Preliminary Continued Airworthiness Data, Electrical Wiring Interconnection System (EWIS) Instructions">
+															Preliminary Continued Airworthiness Data, Electrical Wiring
+															Interconne...
+														</option>
+
+														<option value="1440410900017"
+															title="Preliminary Continued Airworthiness Data, Illustrated Parts Catalog supplements">
+															Preliminary Continued Airworthiness Data, Illustrated Parts
+															Catalog su...
+														</option>
+
+														<option value="1440410899396"
+															title="Preliminary Continued Airworthiness Data, Instructions for Continued Airworthiness">
+															Preliminary Continued Airworthiness Data, Instructions for
+															Continued A...
+														</option>
+
+														<option value="1440410899882"
+															title="Preliminary Continued Airworthiness Data, Maintenance Manual Supplements">
+															Preliminary Continued Airworthiness Data, Maintenance Manual
+															Supplemen...
+														</option>
+
+														<option value="1440410900061"
+															title="Preliminary Continued Airworthiness Data, Wiring diagrams.">
+															Preliminary Continued Airworthiness Data, Wiring diagrams.
+														</option>
+
+														<option value="1440409920431"
+															title="Preliminary Required Operating Data such as Aircraft Flight Manual Supplement (AFMS).">
+															Preliminary Required Operating Data such as Aircraft Flight
+															Manual Sup...
+														</option>
+
+														<option value="1440406375916"
+															title="Presidency of Metrology and Environment (in case of weather balloon)">
+															Presidency of Metrology and Environment (in case of weather
+															balloon)
+														</option>
+
+														<option value="1440406377572" title="Programs curricula">
+															Programs curricula
+														</option>
+
+														<option value="1440406377172" title="Proof of Part Order">
+															Proof of Part Order
+														</option>
+
+														<option value="1440406377028" title="Proof of fee payment">
+															Proof of fee payment
+														</option>
+
+														<option value="1440407368046" title="Proof of fee payment.">
+															Proof of fee payment.
+														</option>
+
+														<option value="1440406376596"
+															title="Proof of no due or pending fees. ">
+															Proof of no due or pending fees.
+														</option>
+
+														<option value="1440407085112" title="Proposed Curriculum">
+															Proposed Curriculum
+														</option>
+
+														<option value="1440406375868" title="Proposed business plan.">
+															Proposed business plan.
+														</option>
+
+														<option value="1440409447121" title="Provide a confirmation to prove compliance with applicable Economic Licensing department requirements
+">
+															Provide a confirmation to prove compliance with applicable
+															Economic Li...
+														</option>
+
+														<option value="1440407120126"
+															title="Provide the name of country to which the aircraft will be exported to.">
+															Provide the name of country to which the aircraft will be
+															exported to.
+														</option>
+
+														<option value="1440406376660"
+															title="Providing a bank guarantee in favour of GACA  ">
+															Providing a bank guarantee in favour of GACA
+														</option>
+
+														<option value="1440406376460"
+															title="Providing a bank guarantee in favour of Ministry of Hajj.">
+															Providing a bank guarantee in favour of Ministry of Hajj.
+														</option>
+
+														<option value="1440406376260"
+															title="Qualification Test Guide (QTG)">
+															Qualification Test Guide (QTG)
+														</option>
+
+														<option value="1440409924694"
+															title="Quality Manual (if a new PMA applicant, or changes/revisions when applicable).">
+															Quality Manual (if a new PMA applicant, or changes/revisions
+															when appl...
+														</option>
+
+														<option value="1440406376380" title="Quality manual ">
+															Quality manual
+														</option>
+
+														<option value="1440408948547"
+															title="Receipt of The Required Fees.">
+															Receipt of The Required Fees.
+														</option>
+
+														<option value="1440406376284"
+															title="Receipt of the required fees">
+															Receipt of the required fees
+														</option>
+
+														<option value="1440406376292"
+															title="Receive the required training and a logbook endorsement from an authorized instructor.">
+															Receive the required training and a logbook endorsement from
+															an author...
+														</option>
+
+														<option value="1440407575934" title="Records of experience.">
+															Records of experience.
+														</option>
+
+														<option value="1440406375652"
+															title="Refer to FSIMS (8900.1/Vol. 02/Ch.4/Sec. 01-02-03-04-05)">
+															Refer to FSIMS (8900.1/Vol. 02/Ch.4/Sec. 01-02-03-04-05)
+														</option>
+
+														<option value="1440406376644"
+															title="Refer to FSIMS (8900.1/Vol. 02/Ch.6/Sec. 02)">
+															Refer to FSIMS (8900.1/Vol. 02/Ch.6/Sec. 02)
+														</option>
+
+														<option value="1440406375940"
+															title="Refer to FSIMS (8900.1/Vol. 02/Ch.7/Sec. 01)">
+															Refer to FSIMS (8900.1/Vol. 02/Ch.7/Sec. 01)
+														</option>
+
+														<option value="1440410147340"
+															title="Registration request directed to the assistant president of aviation standards and signed by the owner.">
+															Registration request directed to the assistant president of
+															aviation s...
+														</option>
+
+														<option value="1440406377204"
+															title="Regulation Training Record it should include the fallowing courses">
+															Regulation Training Record it should include the fallowing
+															courses
+														</option>
+
+														<option value="1440406375740"
+															title="Repair station and quality control manual">
+															Repair station and quality control manual
+														</option>
+
+														<option value="1440406378052"
+															title="Repair station and quality control manual developed in accordance with GACA FAA advisory circular 145 â€“ 9.">
+															Repair station and quality control manual developed in
+															accordance with...
+														</option>
+
+														<option value="1440406377452"
+															title="Repairman Specialized Training Certificate">
+															Repairman Specialized Training Certificate
+														</option>
+
+														<option value="1440407083414"
+															title="Request Letter Certifications and Licensing Manger">
+															Request Letter Certifications and Licensing Manger
+														</option>
+
+														<option value="1440406377956"
+															title="Request Letter addressed to the Principal Operation Inspector (POI)">
+															Request Letter addressed to the Principal Operation
+															Inspector (POI)
+														</option>
+
+														<option value="1440406378068"
+															title="Request Letter addressed to the VP S&amp;ER">
+															Request Letter addressed to the VP S&amp;ER
+														</option>
+
+														<option value="1440406376900"
+															title="Request Letter to Aviation Medicine Director">
+															Request Letter to Aviation Medicine Director
+														</option>
+
+														<option value="1440408930867"
+															title="Request for certification addressed to president ">
+															Request for certification addressed to president
+														</option>
+
+														<option value="1440406377148" title="Request letter">
+															Request letter
+														</option>
+
+														<option value="1440406377236"
+															title="Request letter addressed to the Airworthiness Manager.">
+															Request letter addressed to the Airworthiness Manager.
+														</option>
+
+														<option value="1440409919136"
+															title="Required Operating Data such as Aircraft Flight Manual Supplement (AFMS).">
+															Required Operating Data such as Aircraft Flight Manual
+															Supplement (AFM...
+														</option>
+
+														<option value="1440406376052" title="Residence home map.">
+															Residence home map.
+														</option>
+
+														<option value="1440410324167" title="Resume">
+															Resume
+														</option>
+
+														<option value="1440410773276" title="Risk Assessment">
+															Risk Assessment
+														</option>
+
+														<option value="1440410742100" title="Risk assessment">
+															Risk assessment
+														</option>
+
+														<option value="1440406377900"
+															title="Roaster of personnel authorized by the repair station (requester) who is trained, qualified and nominated to work and performs an airworthiness release.">
+															Roaster of personnel authorized by the repair station
+															(requester) who ...
+														</option>
+
+														<option value="1440406377740" title="SDR Report">
+															SDR Report
+														</option>
+
+														<option value="1440407175453"
+															title="SMS Implementation Plan (IP) &amp; Gap Analysis">
+															SMS Implementation Plan (IP) &amp; Gap Analysis
+														</option>
+
+														<option value="1440408931448" title="SMS manual ">
+															SMS manual
+														</option>
+
+														<option value="1440407175183" title="SMS manual (SMM)">
+															SMS manual (SMM)
+														</option>
+
+														<option value="1440407453870"
+															title="Safety Management System Manual ">
+															Safety Management System Manual
+														</option>
+
+														<option value="1440406377940" title="Safety manual">
+															Safety manual
+														</option>
+
+														<option value="1440407064507"
+															title="Saudi Commission for Health Specialties Registration (or equivalent for physicians practice outside Saudi Arabia)">
+															Saudi Commission for Health Specialties Registration (or
+															equivalent fo...
+														</option>
+
+														<option value="1440408948206"
+															title="Saudi ID/ Residence Permit">
+															Saudi ID/ Residence Permit
+														</option>
+
+														<option value="1440408930890"
+															title="Saudi company trade registration">
+															Saudi company trade registration
+														</option>
+
+														<option value="1440408931101"
+															title="Saudi operator  credential as applicable  ">
+															Saudi operator credential as applicable
+														</option>
+
+														<option value="1440406376724" title="Schedule of events (SOE)">
+															Schedule of events (SOE)
+														</option>
+
+														<option value="1440406375876"
+															title="School Endorsement Letter.">
+															School Endorsement Letter.
+														</option>
+
+														<option value="1440406375636"
+															title="Scope of work needed to be performed  on the aircraft including the ATA chapters">
+															Scope of work needed to be performed on the aircraft
+															including the AT...
+														</option>
+
+														<option value="1440406376252" title="Security Program">
+															Security Program
+														</option>
+
+														<option value="1440406377564"
+															title="Service fee payment receipt">
+															Service fee payment receipt
+														</option>
+
+														<option value="1440406378116"
+															title="Service fee payment receipt via â€œSADADâ€�">
+															Service fee payment receipt via â€œSADADâ€�
+														</option>
+
+														<option value="1440407416611"
+															title="Service level agreement with Air Traffic Control tower (Air Navigation sector) as stated in GACAR 138">
+															Service level agreement with Air Traffic Control tower (Air
+															Navigation...
+														</option>
+
+														<option value="1440406376308"
+															title="Snap shot from Google earth">
+															Snap shot from Google earth
+														</option>
+
+														<option value="1440409370753"
+															title="Speak, write, read and understand English language ">
+															Speak, write, read and understand English language
+														</option>
+
+														<option value="1440407373276"
+															title="State of Design Notification Letter addressed to Airworthiness Manager.">
+															State of Design Notification Letter addressed to
+															Airworthiness Manager...
+														</option>
+
+														<option value="1440409913683"
+															title="State of Design Notification letter addressed to the General Manager of Airworthiness (Optional)">
+															State of Design Notification letter addressed to the General
+															Manager o...
+														</option>
+
+														<option value="1440407120152"
+															title="Statement from the importing country's CAA that the Export Certificate of Airworthiness is not required.">
+															Statement from the importing country's CAA that the Export
+															Certificate...
+														</option>
+
+														<option value="1440406376828"
+															title="Statement of Perceived Need for R/S.">
+															Statement of Perceived Need for R/S.
+														</option>
+
+														<option value="1440407392502" title="Statement of compliance">
+															Statement of compliance
+														</option>
+
+														<option value="1440406376692"
+															title="Statement of compliance with GACA FAR Part 145">
+															Statement of compliance with GACA FAR Part 145
+														</option>
+
+														<option value="1440406376612" title="Statement of conformity">
+															Statement of conformity
+														</option>
+
+														<option value="1440406376092"
+															title="Submit a request by the airline , tourist agent or airline agent for operating Hajj and Umrah flights">
+															Submit a request by the airline , tourist agent or airline
+															agent for o...
+														</option>
+
+														<option value="1440406376668" title="Submit an application">
+															Submit an application
+														</option>
+
+														<option value="1440407113662" title="Submit form No. (100B)">
+															Submit form No. (100B)
+														</option>
+
+														<option value="1440409918655"
+															title="Supplemental Type Certificate (STC) or Major Change Approval issued by GACA Recognized Foreign National Aviation Authorities (For Existing Approved Data).">
+															Supplemental Type Certificate (STC) or Major Change Approval
+															issued by...
+														</option>
+
+														<option value="1440410742137"
+															title="Support document from aircraft manufacture maintenance check can be escalated">
+															Support document from aircraft manufacture maintenance check
+															can be es...
+														</option>
+
+														<option value="1440410773379"
+															title="Support document from aircraft manufacture maintenance check can be escalated.">
+															Support document from aircraft manufacture maintenance check
+															can be es...
+														</option>
+
+														<option value="1440406377252"
+															title="Supporting documents (approvals of concerned authorities)">
+															Supporting documents (approvals of concerned authorities)
+														</option>
+
+														<option value="1440406377260"
+															title="Supporting letter from concerned authority (for landing request)">
+															Supporting letter from concerned authority (for landing
+															request)
+														</option>
+
+														<option value="1440406376180"
+															title="Supporting letter from the concerned authority">
+															Supporting letter from the concerned authority
+														</option>
+
+														<option value="1440410924707"
+															title="Technical Data ((**) see additional Help)">
+															Technical Data ((**) see additional Help)
+														</option>
+
+														<option value="1440406377388"
+															title="Technical Operation Manual T.O.M.">
+															Technical Operation Manual T.O.M.
+														</option>
+
+														<option value="1440406377212"
+															title="The last routine maintenance check">
+															The last routine maintenance check
+														</option>
+
+														<option value="1440406376420"
+															title="The original license given to the office/agency ">
+															The original license given to the office/agency
+														</option>
+
+														<option value="1440406377484"
+															title="The original license which was previously given to the office/agency. ">
+															The original license which was previously given to the
+															office/agency.
+														</option>
+
+														<option value="1440407085314"
+															title="Three copies of each training course outline">
+															Three copies of each training course outline
+														</option>
+
+														<option value="1440406378132"
+															title="Training Centre Evaluators (TCEs)">
+															Training Centre Evaluators (TCEs)
+														</option>
+
+														<option value="1440406375748"
+															title="Training Centre Instructors (TCIs)">
+															Training Centre Instructors (TCIs)
+														</option>
+
+														<option value="1440406377412"
+															title="Training Manual developed in accordance with GACA FAA advisory circular 145 â€“ 9">
+															Training Manual developed in accordance with GACA FAA
+															advisory circula...
+														</option>
+
+														<option value="1440407393087" title="Training Record">
+															Training Record
+														</option>
+
+														<option value="1440406377308" title="Training programs">
+															Training programs
+														</option>
+
+														<option value="1440406377972"
+															title="Training programs for TCIs and TCEs">
+															Training programs for TCIs and TCEs
+														</option>
+
+														<option value="1440407575922"
+															title="Training record (including mandatory courses).">
+															Training record (including mandatory courses).
+														</option>
+
+														<option value="1440406377780" title="Training specification">
+															Training specification
+														</option>
+
+														<option value="1440410807884" title="Transmittal /Request letter addressed to the Airworthiness Manager for:
+a. Issuing Initial Certificate of Airworthiness.
+b. Issuing Initial Certificate of Authorization.">
+															Transmittal /Request letter addressed to the Airworthiness
+															Manager for...
+														</option>
+
+														<option value="1440406375628"
+															title="Transmittal Letter addressed to the Principal Operation Inspector (POI)">
+															Transmittal Letter addressed to the Principal Operation
+															Inspector (POI...
+														</option>
+
+														<option value="1440406376940" title="Transmittal letter">
+															Transmittal letter
+														</option>
+
+														<option value="1440406377908"
+															title="Transmittal letter addressed to the Director of Airworthiness and which includes the following information: Aircraft make, model, series, registration and serial number">
+															Transmittal letter addressed to the Director of
+															Airworthiness and whic...
+														</option>
+
+														<option value="1440406377068"
+															title="Two recent photos 3cmx3cm with white back ground (un-covered head)">
+															Two recent photos 3cmx3cm with white back ground (un-covered
+															head)
+														</option>
+
+														<option value="1440406376108" title="Valid flight evaluation.">
+															Valid flight evaluation.
+														</option>
+
+														<option value="1440408948355"
+															title="Verification (should be sent by E-Mail from the origin authority)">
+															Verification (should be sent by E-Mail from the origin
+															authority)
+														</option>
+
+														<option value="1440407085680"
+															title="Verification of foreign certificate">
+															Verification of foreign certificate
+														</option>
+
+														<option value="1440406377540"
+															title="Work experience minimum of 24 months.">
+															Work experience minimum of 24 months.
+														</option>
+
+														<option value="1440407764436"
+															title="Written statement by the certificated organization as per GAC">
+															Written statement by the certificated organization as per
+															GAC
+														</option>
+
+														<option value="1440406376484" title="Yearly Plan">
+															Yearly Plan
+														</option>
+
+														<option value="1440407176064" title="other relevant documents">
+															other relevant documents
+														</option>
+
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="mx-5">
+											<div class="d-flex align-items-center flex-column">
+												<div class="formAdded-title">
+													<h4>Mandatory</h4>
+												</div>
+												<div>
+													<input type="radio" value="mandatory" name="mandatoryDocument">
+												</div>
+											</div>
+										</div>
+										<div class="mx-5">
+											<div class="d-flex align-items-center flex-column">
+												<div class="formAdded-title">
+													<h4>Optional</h4>
+												</div>
+												<div>
+													<input type="radio" value="optional" name="mandatoryDocument">
+												</div>
+											</div>
+										</div>
+										<div class="mx-5">
+											<button class="formAdded-btn"
+												onclick="addRequiredDocument('Remove','Mandatory','Optional')"
+												type="button">Add</button>
+										</div>
+									</div>
+
+									<br>
+									<div id="documentsList">
+
+									</div>
+
+								</div>
+
+								<div class="mt-5">
+									<div class="mt-5">
+										<div class="sectiontitles">
+											<h4>Additional information</h4>
+										</div>
+									</div>
+									<div class="row">
+										<div class="mt-3">
+											<div class="form-check d-flex align-items-center gap-2">
+												<input class="form-check-input" type="checkbox" value="true"
+													id="needPayment" name="needPayment" onclick="NP_toggle()">
+												<label class="form-check-label pagesubtitle" for="needPayment"
+													style="font-size: 1.5rem;">
+													Need Payment
+												</label>
+											</div>
+										</div>
+										<div id="feesBlock" style="display:none">
+											<div class="row">
+												<div class="col-12 mt-3">
+													<div class="form-group">
+														<label for="FeesDescription">Fees Description</label>
+														<input type="text" class="form-control" id="fees" name="fees"
+															value="">
+													</div>
+												</div>
+
+												<div class="col-md-6 mt-3">
+													<div class="form-group">
+														<label for="ServiceCode">Service Code</label>
+														<input type="text" class="form-control" id="serviceCode"
+															name="serviceCode" value="">
+													</div>
+												</div>
+
+												<div class="col-md-6 mt-3">
+													<div class="form-group">
+														<label for="ServiceCategory">Service Category</label>
+														<input type="text" class="form-control" id="serviceCategory"
+															name="serviceCategory" value="">
+													</div>
+												</div>
+											</div>
+
+										</div>
+									</div>
+									<div class="d-flex align-items-center mb-3 mt-4">
+										<div>
+											<img src="./images/settingsBlueIcon.png" alt="">
+										</div>
+										<div class="mx-3 pagesubtitle">
+											<span style="font-size: 1.5rem;">Related E-Services</span>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-md-10">
+											<select id="eserviceId" class="form-select">
+												<option value="" selected="">Select</option>
+
+												<option value="1440408946674" title="1. Testing Center">
+													Licensing - 1. Testing Center
+												</option>
+
+												<option value="1440408975922"
+													title="AERIAL WORK OPERATIONS - GACAR 133 (OPERATING AND CERTIFICATION RULES GOVERNING THE CONDUCT OF AERIAL WORK OPERATION , USING MANNED AIRCRAFT IN THE KINGDOM OF SAUDI ARABIA BY ANY PERSON)">
+													Flight Operations-General Aviation - AERIAL WORK OPERATIONS - GACAR
+													133 (OPERATING AND CERTIFICATION RULES GOVERNING ...
+												</option>
+
+												<option value="1440406410568" title="Aerospace Obstacle Evaluation">
+													Aerodrome and Aerospace-Obstacle Procedures - Aerospace Obstacle
+													Evaluation
+												</option>
+
+												<option value="1440406405543"
+													title="Air Cargo Licensing (Initial) (Accredited/ Assemblers)">
+													Aviation Security at the General Authority of Civil Aviation - Air
+													Cargo Licensing (Initial) (Accredited/ Assemblers)
+												</option>
+
+												<option value="1440406407533"
+													title="Air Cargo Licensing (Renewal) (Accredited/ Assemblers)">
+													Aviation Security at the General Authority of Civil Aviation - Air
+													Cargo Licensing (Renewal) (Accredited/ Assemblers)
+												</option>
+
+												<option value="1440406408709"
+													title="Air Cargo Licensing (Revocation) (Accredited/ Assemblers)">
+													Aviation Security at the General Authority of Civil Aviation - Air
+													Cargo Licensing (Revocation) (Accredited/ Assemblers)
+												</option>
+
+												<option value="1440407414622"
+													title="Air Operator Certification - GACA Part 121 (Domestic, Flag and Supplemental Operation) Service">
+													Flight Operations - Air Operator Certification - GACA Part 121
+													(Domestic, Flag and Supplemental Oper...
+												</option>
+
+												<option value="1440406407953"
+													title="Air Operator Certification - GACAR 125 (Airplanes Having a Seating Capacity of 20 or More Passengers or a Maximum Payload Capacity of 6,000 Pounds or More) Service">
+													Flight Operations-General Aviation - Air Operator Certification -
+													GACAR 125 (Airplanes Having a Seating Capacity of 2...
+												</option>
+
+												<option value="1440408972430"
+													title="Air Operator Certification - GACAR 125 (NONCOMMERCIAL OPERATORS USING TURBOJETS, TRANSPORT CATEGORY AIRCRAFT, OR COMMUTER CATEGORY AIRPLANES)">
+													Flight Operations-General Aviation - Air Operator Certification -
+													GACAR 125 (NONCOMMERCIAL OPERATORS USING TURBOJETS,...
+												</option>
+
+												<option value="1440406411108"
+													title="Air Operator Certification - GACAR 133 (Rotorcraft External Load Operations)">
+													Flight Operations-General Aviation - Air Operator Certification -
+													GACAR 133 (Rotorcraft External Load Operations)
+												</option>
+
+												<option value="355" title="Air Operator Certification Cancellation">
+													Flight Operations - Air Operator Certification Cancellation
+												</option>
+
+												<option value="354" title="Air Operator Certification Renewal">
+													Flight Operations - Air Operator Certification Renewal
+												</option>
+
+												<option value="357" title="Air Operator Certification Renewal V2">
+													Flight Operations - Air Operator Certification Renewal V2
+												</option>
+
+												<option value="1440407086457" title="Aircraft Registration">
+													Airworthiness - Aircraft Registration - Aircraft Registration
+												</option>
+
+												<option value="1440407087214"
+													title="Aircraft Registration Mark Reservation Request">
+													Airworthiness - Aircraft Registration - Aircraft Registration Mark
+													Reservation Request
+												</option>
+
+												<option value="1440407085679" title="Airmen Certification">
+													Licensing - Airmen Certification
+												</option>
+
+												<option value="1440407371588"
+													title="Application for Design Change Acceptance - Minor">
+													Airworthiness-Engineering - Application for Design Change Acceptance
+													- Minor
+												</option>
+
+												<option value="1440407084466"
+													title="Application for Inspection Authorization (IA)">
+													Airworthiness - General Aviation and Light Sports - Application for
+													Inspection Authorization (IA)
+												</option>
+
+												<option value="1440407370709"
+													title="Application for Repair Design Approval (RDA)">
+													Airworthiness-Engineering - Application for Repair Design Approval
+													(RDA)
+												</option>
+
+												<option value="1440409375417"
+													title="Application for Special Flight Permit for Delivery Purposes (GACA 21.179 (a) (2))">
+													Airworthiness-Royal Fleet - Application for Special Flight Permit
+													for Delivery Purposes (GACA 21.179 (a) (2)...
+												</option>
+
+												<option value="1440410737507"
+													title="Application for Special Flight Permit for Delivery Purposes (GACA 21.179 (a) (2))">
+													Airworthiness - Air Carrier - Application for Special Flight Permit
+													for Delivery Purposes (GACA 21.179 (a) (2)...
+												</option>
+
+												<option value="1440406412098"
+													title="Application for Special Flight Permit for Delivery Purposes (GACA 21.179 (a) (2))">
+													Airworthiness - General Aviation and Light Sports - Application for
+													Special Flight Permit for Delivery Purposes (GACA 21.179 (a) (2)...
+												</option>
+
+												<option value="1440406409633"
+													title="Application for Special Flight Permit for Maintenance Purposes (GACA 21.179 (a) (1))">
+													Airworthiness - General Aviation and Light Sports - Application for
+													Special Flight Permit for Maintenance Purposes (GACA 21.179 (a) ...
+												</option>
+
+												<option value="1440410737047"
+													title="Application for Special Flight Permit for Maintenance Purposes (GACA 21.179 (a) (1))">
+													Airworthiness - Air Carrier - Application for Special Flight Permit
+													for Maintenance Purposes (GACA 21.179 (a) ...
+												</option>
+
+												<option value="1440409375183"
+													title="Application for Special Flight Permit for Maintenance Purposes (GACA 21.179 (a) (1))">
+													Airworthiness-Royal Fleet - Application for Special Flight Permit
+													for Maintenance Purposes (GACA 21.179 (a) ...
+												</option>
+
+												<option value="1440407367053"
+													title="Application for Supplemental Type Certificate (STC)">
+													Airworthiness-Engineering - Application for Supplemental Type
+													Certificate (STC)
+												</option>
+
+												<option value="1440407363564"
+													title="Application for Supplemental Type Certificate (STC) - Letter of Intent">
+													Airworthiness-Engineering - Application for Supplemental Type
+													Certificate (STC) - Letter of Intent
+												</option>
+
+												<option value="1440407373052"
+													title="Application for Type Certificate Acceptance">
+													Airworthiness-Engineering - Application for Type Certificate
+													Acceptance
+												</option>
+
+												<option value="1440410730204" title="Approval of MEL Extension">
+													Airworthiness - Air Carrier - Approval of MEL Extension
+												</option>
+
+												<option value="1440406410502" title="Approval of MEL Extension">
+													Airworthiness - General Aviation and Light Sports - Approval of MEL
+													Extension
+												</option>
+
+												<option value="1440406408055"
+													title="Assignment of a Unique 24-Bit Address to Saudi Aircraft equipped with Mode (S) Transponder">
+													Airworthiness - General Aviation and Light Sports - Assignment of a
+													Unique 24-Bit Address to Saudi Aircraft equipped with Mode (S) T...
+												</option>
+
+												<option value="1440409374110"
+													title="Assignment of a Unique 24-Bit Address to Saudi Aircraft equipped with Mode (S) Transponder">
+													Airworthiness-Royal Fleet - Assignment of a Unique 24-Bit Address to
+													Saudi Aircraft equipped with Mode (S) T...
+												</option>
+
+												<option value="1440410736260"
+													title="Assignment of a Unique 24-Bit Address to Saudi Aircraft equipped with Mode (S) Transponder">
+													Airworthiness - Air Carrier - Assignment of a Unique 24-Bit Address
+													to Saudi Aircraft equipped with Mode (S) T...
+												</option>
+
+												<option value="1440407274733"
+													title="Aviation Maintenance Technician School Certification - GACAR 147 (Initial/Changes)">
+													Airworthiness-Technical school - Aviation Maintenance Technician
+													School Certification - GACAR 147 (Initial/Change...
+												</option>
+
+												<option value="1440406411285"
+													title="Aviation Maintenance Technician School Certification - GACAR 147 (Initial/Changes)">
+													Airworthiness-Technical school - Aviation Maintenance Technician
+													School Certification - GACAR 147 (Initial/Change...
+												</option>
+
+												<option value="1440408133656"
+													title="CERTIFICATION OF AIR NAVIGATION SERVICE PROVIDERS">
+													Aerodrome and Aerospace - CERTIFICATION OF AIR NAVIGATION SERVICE
+													PROVIDERS
+												</option>
+
+												<option value="1440406411233"
+													title="CERTIFICATION OF GROUND SERVICE PROVIDERS">
+													Aerodrome and Aerospace - Ground Operation Services - CERTIFICATION
+													OF GROUND SERVICE PROVIDERS
+												</option>
+
+												<option value="1440409754169"
+													title="Certificate  of Authorization for HZ register aircraft - GACA Part 91">
+													Airworthiness - General Aviation and Light Sports - Certificate of
+													Authorization for HZ register aircraft - GACA Part 91
+												</option>
+
+												<option value="1440409823938"
+													title="Certificate  of Authorization for foreign register aircraft - GACA Part 91">
+													Airworthiness - General Aviation and Light Sports - Certificate of
+													Authorization for foreign register aircraft - GACA Part 91
+												</option>
+
+												<option value="1440407453629" title="Certification of Aerodromes">
+													Aerodrome and Aerospace - Aerodromes Standards - Certification of
+													Aerodromes
+												</option>
+
+												<option value="1440407115216" title="Change Registration mark  request">
+													Airworthiness - Aircraft Registration - Change Registration mark
+													request
+												</option>
+
+												<option value="1440407111923"
+													title="Changing of a Registered Aircraft Ownership">
+													Airworthiness - Aircraft Registration - Changing of a Registered
+													Aircraft Ownership
+												</option>
+
+												<option value="1440406410995" title="Check Airman Renewal Service">
+													Flight Operations - Check Airman Renewal Service
+												</option>
+
+												<option value="1440410739164"
+													title="Conformity Inspection to Add aircraft into the Operations Specifications">
+													Airworthiness - Air Carrier - Conformity Inspection to Add aircraft
+													into the Operations Specifications
+												</option>
+
+												<option value="1440410732212"
+													title="Conformity Inspection to Add aircraft into the Operations Specifications">
+													Airworthiness - General Aviation and Light Sports - Conformity
+													Inspection to Add aircraft into the Operations Specifications
+												</option>
+
+												<option value="1440407086365" title="De-registration of an Aircraft">
+													Airworthiness - Aircraft Registration - De-registration of an
+													Aircraft
+												</option>
+
+												<option value="1440407371232"
+													title="Design Change Acceptance (Major-STC-Change to STC)">
+													Airworthiness-Engineering - Design Change Acceptance
+													(Major-STC-Change to STC)
+												</option>
+
+												<option value="1440410897174"
+													title="Design Change Validation (Major-STC-Change to STC)">
+													Airworthiness-Engineering - Design Change Validation
+													(Major-STC-Change to STC)
+												</option>
+
+												<option value="1440409926218"
+													title="Designated Airworthiness Representatives (DAR-M)">
+													Airworthiness-Engineering - Designated Airworthiness Representatives
+													(DAR-M)
+												</option>
+
+												<option value="1440410722876"
+													title="Designated Airworthiness Representatives (DAR-T)">
+													Airworthiness - General Aviation and Light Sports - Designated
+													Airworthiness Representatives (DAR-T)
+												</option>
+
+												<option value="1440407373544"
+													title="Designated Engineering Representatives (DER)">
+													Airworthiness-Engineering - Designated Engineering Representatives
+													(DER)
+												</option>
+
+												<option value="1440410323135"
+													title="Designates Pilot Examiner - Initial ">
+													Flight Operations-Training Organization - Designates Pilot Examiner
+													- Initial
+												</option>
+
+												<option value="1440406408015"
+													title="Flight Simulation Training Device Certification (Initial/Renewal) Service">
+													Flight Operations-Training Organization - Flight Simulation Training
+													Device Certification (Initial/Renewal) Service
+												</option>
+
+												<option value="1440406668646"
+													title="Foreign Air Carrier - Economic license (Initial)">
+													ECONOMIC LICENSING DEPARTMENT - Foreign Air Carrier - Economic
+													license (Initial)
+												</option>
+
+												<option value="1440406668780"
+													title="Foreign Air Carrier - Economic license Service (Renewal)">
+													ECONOMIC LICENSING DEPARTMENT - Foreign Air Carrier - Economic
+													license Service (Renewal)
+												</option>
+
+												<option value="1440406669206"
+													title="Foreign Air Carrier - Economic license Service (Revocation)">
+													ECONOMIC LICENSING DEPARTMENT - Foreign Air Carrier - Economic
+													license Service (Revocation)
+												</option>
+
+												<option value="1440406409237"
+													title="Foreign Air Operator Authorization  - GACAR 129 (Amendment - Add\remove Aircraft) ">
+													Flight Operations-Foreign Air Carrier Operator - Foreign Air
+													Operator Authorization - GACAR 129 (Amendment - Add\remove
+													Aircraft...
+												</option>
+
+												<option value="1440406409501"
+													title="Foreign Air Operator Authorization - GACAR 129 (Initial)">
+													Flight Operations-Foreign Air Carrier Operator - Foreign Air
+													Operator Authorization - GACAR 129 (Initial)
+												</option>
+
+												<option value="1440406411349"
+													title="Foreign Air Operator Authorization - GACAR 129 (Renewal)">
+													Flight Operations-Foreign Air Carrier Operator - Foreign Air
+													Operator Authorization - GACAR 129 (Renewal)
+												</option>
+
+												<option value="1440407121991" title="Foreign License Verification">
+													Licensing - Foreign License Verification
+												</option>
+
+												<option value="1440407282062"
+													title="GROUND HANDLING OPERATOR LICENSING (RENEWAL)">
+													ECONOMIC LICENSING DEPARTMENT - GROUND HANDLING OPERATOR LICENSING
+													(RENEWAL)
+												</option>
+
+												<option value="1440407447856"
+													title="GROUND SERVICES PERSONNEL WORK PERMIT">
+													Aerodrome and Aerospace - Ground Operation Services - GROUND
+													SERVICES PERSONNEL WORK PERMIT
+												</option>
+
+												<option value="1440406411189"
+													title="Hajj and Umrah transporting licensing">
+													Air Transport - Hajj and Ummrah - Hajj and Umrah transporting
+													licensing
+												</option>
+
+												<option value="1440407182283" title="Hazard Report Notification (HRN)">
+													Safety &amp; Risk Management - Hazard Report Notification (HRN)
+												</option>
+
+												<option value="1440406407061"
+													title="Incident reporting / Occurrences reporting">
+													Safety &amp; Risk Management - Incident reporting / Occurrences
+													reporting
+												</option>
+
+												<option value="1440407087960"
+													title="Issuance / Renewal of LOA for Special Operations">
+													Flight Operations-General Aviation - Issuance / Renewal of LOA for
+													Special Operations
+												</option>
+
+												<option value="1440406408639"
+													title="Issuance of a Repair Station Certificate for Domestic Applicants under GACAR 145 (Initial)">
+													Airworthiness-Repair Station - Issuance of a Repair Station
+													Certificate for Domestic Applicants under GACAR 145...
+												</option>
+
+												<option value="1440407250626"
+													title="Issuance of a Repair Station Certificate for Domestic Applicants under GACAR 145 (Initial)">
+													Airworthiness-Repair Station - Issuance of a Repair Station
+													Certificate for Domestic Applicants under GACAR 145...
+												</option>
+
+												<option value="1440407251371"
+													title="Issuance of a Repair Station Certificate under GACAR 145 (Amendment or Add Rating)">
+													Airworthiness-Repair Station - Issuance of a Repair Station
+													Certificate under GACAR 145 (Amendment or Add Ratin...
+												</option>
+
+												<option value="1440406411443"
+													title="Issuance of a Repair Station Certificate under GACAR 145 (Amendment or Add Rating)">
+													Airworthiness-Repair Station - Issuance of a Repair Station
+													Certificate under GACAR 145 (Amendment or Add Ratin...
+												</option>
+
+												<option value="1440407249764"
+													title="Issuance of a Repair Station Certificate under GACAR 145 (Renewal)">
+													Airworthiness-Repair Station - Issuance of a Repair Station
+													Certificate under GACAR 145 (Renewal)
+												</option>
+
+												<option value="1440406410888"
+													title="Issuance of a Repair Station Certificate under GACAR 145 (Renewal)">
+													Airworthiness-Repair Station - Issuance of a Repair Station
+													Certificate under GACAR 145 (Renewal)
+												</option>
+
+												<option value="1440406407576"
+													title="Issuance of a Special Airworthiness Certificate (Initial)">
+													Airworthiness - General Aviation and Light Sports - Issuance of a
+													Special Airworthiness Certificate (Initial)
+												</option>
+
+												<option value="1440410722706"
+													title="Issuance of a Special Airworthiness Certificate (Renewal)">
+													Airworthiness - General Aviation and Light Sports - Issuance of a
+													Special Airworthiness Certificate (Renewal)
+												</option>
+
+												<option value="1440410817518"
+													title="Issuance of an Aircraft Certificate of Airworthiness (Initial)">
+													Airworthiness - Air Carrier - Issuance of an Aircraft Certificate of
+													Airworthiness (Initial)
+												</option>
+
+												<option value="1440409374554"
+													title="Issuance of an Aircraft Certificate of Airworthiness (Initial)">
+													Airworthiness-Royal Fleet - Issuance of an Aircraft Certificate of
+													Airworthiness (Initial)
+												</option>
+
+												<option value="1440406406560"
+													title="Issuance of an Aircraft Certificate of Airworthiness (Initial)">
+													Airworthiness - General Aviation and Light Sports - Issuance of an
+													Aircraft Certificate of Airworthiness (Initial)
+												</option>
+
+												<option value="1440406410325"
+													title="Issuance of an Aircraft Certificate of Airworthiness (Renewal)">
+													Airworthiness - General Aviation and Light Sports - Issuance of an
+													Aircraft Certificate of Airworthiness (Renewal)
+												</option>
+
+												<option value="1440410736829"
+													title="Issuance of an Aircraft Certificate of Airworthiness (Renewal)">
+													Airworthiness - Air Carrier - Issuance of an Aircraft Certificate of
+													Airworthiness (Renewal)
+												</option>
+
+												<option value="1440409374804"
+													title="Issuance of an Aircraft Certificate of Airworthiness (Renewal)">
+													Airworthiness-Royal Fleet - Issuance of an Aircraft Certificate of
+													Airworthiness (Renewal)
+												</option>
+
+												<option value="1440406411651"
+													title="Issuance of an Aircraft Export Certificate of Airworthiness  ">
+													Airworthiness - General Aviation and Light Sports - Issuance of an
+													Aircraft Export Certificate of Airworthiness
+												</option>
+
+												<option value="1440410736037"
+													title="Issuance of an Aircraft Export Certificate of Airworthiness  ">
+													Airworthiness - Air Carrier - Issuance of an Aircraft Export
+													Certificate of Airworthiness
+												</option>
+
+												<option value="1440409374290"
+													title="Issuance of an Aircraft Export Certificate of Airworthiness  ">
+													Airworthiness-Royal Fleet - Issuance of an Aircraft Export
+													Certificate of Airworthiness
+												</option>
+
+												<option value="1440406408158"
+													title="Issuance of an Aircraft Radio License">
+													Airworthiness - General Aviation and Light Sports - Issuance of an
+													Aircraft Radio License
+												</option>
+
+												<option value="1440410737896"
+													title="Issuance of an Aircraft Radio License">
+													Airworthiness - Air Carrier - Issuance of an Aircraft Radio License
+												</option>
+
+												<option value="1440409372274"
+													title="Issuance of an Aircraft Radio License">
+													Airworthiness-Royal Fleet - Issuance of an Aircraft Radio License
+												</option>
+
+												<option value="1440406407237"
+													title="Issuance of an aircraft authorization for special purposes">
+													Flight Operations - Issuance of an aircraft authorization for
+													special purposes
+												</option>
+
+												<option value="1440407075071"
+													title="Issue of Aircraft Dispatcher Certificate (Foreign Conversion) Request">
+													Flight Operations-Flight Dispatch - Issue of Aircraft Dispatcher
+													Certificate (Foreign Conversion) Request
+												</option>
+
+												<option value="1440407081481"
+													title="Issue of Aircraft Dispatcher Certificate (Renewal / Reissuance) Request">
+													Flight Operations-Flight Dispatch - Issue of Aircraft Dispatcher
+													Certificate (Renewal / Reissuance) Request
+												</option>
+
+												<option value="1440406407462"
+													title="Issue of CPL, CPL/IR, ATPL or PPL (Foreign Conversion) Request">
+													Flight Operations - Issue of CPL, CPL/IR, ATPL or PPL (Foreign
+													Conversion) Request
+												</option>
+
+												<option value="1440406408404"
+													title="Issue of CPL, CPL/IR, ATPL or PPL (School Graduate approve  by GACA) Request">
+													Flight Operations - Issue of CPL, CPL/IR, ATPL or PPL (School
+													Graduate approve by GACA) Request
+												</option>
+
+												<option value="1440406408301"
+													title="Issue of maintenance License (Repairman)">
+													Airworthiness-Technical school - Issue of maintenance License
+													(Repairman)
+												</option>
+
+												<option value="1440407386872"
+													title="LSA - Issuance of a Light Sport Aircraft Certificate of Airworthiness (Initial)">
+													Airworthiness - General Aviation and Light Sports - LSA - Issuance
+													of a Light Sport Aircraft Certificate of Airworthiness (Initial)
+												</option>
+
+												<option value="1440410811699"
+													title="LSA - Issuance of a Light Sport Aircraft Certificate of Airworthiness (Renewal)">
+													Airworthiness - General Aviation and Light Sports - LSA - Issuance
+													of a Light Sport Aircraft Certificate of Airworthiness (Renewal)
+												</option>
+
+												<option value="1440407387704"
+													title="LSA - Issue of maintenance License (Repairman)">
+													Licensing - LSA - Issue of maintenance License (Repairman)
+												</option>
+
+												<option value="1440407386955"
+													title="LSA - Light Sport Aircraft Certificate of Registration">
+													Airworthiness - Aircraft Registration - LSA - Light Sport Aircraft
+													Certificate of Registration
+												</option>
+
+												<option value="1440406407367" title="MEL Approval">
+													Flight Operations - MEL Approval
+												</option>
+
+												<option value="1440409373670" title="MEL Extension">
+													Airworthiness-Royal Fleet - MEL Extension
+												</option>
+
+												<option value="1440406410951"
+													title="Maintenance License (Foreign Conversion)">
+													Airworthiness-Technical school - Maintenance License (Foreign
+													Conversion)
+												</option>
+
+												<option value="1440410772959" title="Maintenance Program Escalation">
+													Airworthiness - General Aviation and Light Sports - Maintenance
+													Program Escalation
+												</option>
+
+												<option value="1440409373346"
+													title="Manual / Operations Programs Review / Acceptance">
+													Airworthiness-Royal Fleet - Manual / Operations Programs Review /
+													Acceptance
+												</option>
+
+												<option value="1440410741182"
+													title="Manual / Operations Programs Review / Acceptance">
+													Airworthiness - Air Carrier - Manual / Operations Programs Review /
+													Acceptance
+												</option>
+
+												<option value="1440406408355"
+													title="Manual / Operations Programs Review / Acceptance">
+													Airworthiness - General Aviation and Light Sports - Manual /
+													Operations Programs Review / Acceptance
+												</option>
+
+												<option value="1440406406664"
+													title="Manual/Operations Approval Service">
+													Flight Operations - Manual/Operations Approval Service
+												</option>
+
+												<option value="1440408134718" title="OBSTACLE ASSESSOR">
+													Aerodrome and Aerospace-Obstacle Procedures - OBSTACLE ASSESSOR
+												</option>
+
+												<option value="1440406412005"
+													title="One Time Approval to Perform Maintenance">
+													Airworthiness - General Aviation and Light Sports - One Time
+													Approval to Perform Maintenance
+												</option>
+
+												<option value="1440406406980"
+													title="Operating Experience Observation Service">
+													Flight Operations - Operating Experience Observation Service
+												</option>
+
+												<option value="1440406409807"
+													title="Operations Specifications Amendment Service">
+													Flight Operations - Operations Specifications Amendment Service
+												</option>
+
+												<option value="1440406407910"
+													title="Petition for Exemptions to Regulatory Requirements Service">
+													Flight Operations - Petition for Exemptions to Regulatory
+													Requirements Service
+												</option>
+
+												<option value="1440407085063"
+													title="Pilot School Certification - GACAR 141 (Initial/ Renewal/ Amendment)">
+													Flight Operations-Training Organization - Pilot School Certification
+													- GACAR 141 (Initial/ Renewal/ Amendment)
+												</option>
+
+												<option value="1440407416311"
+													title="REGISTRATION OF HELIPORT/LANDING STRIP">
+													Aerodrome and Aerospace - Aerodromes Standards - REGISTRATION OF
+													HELIPORT/LANDING STRIP
+												</option>
+
+												<option value="1440409375730" title="Register an official 406 MHz ELT">
+													Airworthiness-Royal Fleet - Register an official 406 MHz ELT
+												</option>
+
+												<option value="1440410738136" title="Register an official 406 MHz ELT">
+													Airworthiness - Air Carrier - Register an official 406 MHz ELT
+												</option>
+
+												<option value="1440406411066" title="Register an official 406 MHz ELT">
+													Airworthiness - General Aviation and Light Sports - Register an
+													official 406 MHz ELT
+												</option>
+
+												<option value="1440406408829"
+													title="Renewal of CPL, CPL/IR, ATPL or PPL Request">
+													Flight Operations - Renewal of CPL, CPL/IR, ATPL or PPL Request
+												</option>
+
+												<option value="1440407370260"
+													title="Repair Design Approval (RDA) - Letter of Intent.">
+													Airworthiness-Engineering - Repair Design Approval (RDA) - Letter of
+													Intent.
+												</option>
+
+												<option value="1440406651559"
+													title="Request for Letter of Support for Aviation Support Services Operators Service">
+													ECONOMIC LICENSING DEPARTMENT - Request for Letter of Support for
+													Aviation Support Services Operators Service
+												</option>
+
+												<option value="1440406652236"
+													title="Request for Letter of Support for commercial visit visa">
+													ECONOMIC LICENSING DEPARTMENT - Request for Letter of Support for
+													commercial visit visa
+												</option>
+
+												<option value="1440406667753"
+													title="Request for Letter of Support for permanent work visa">
+													ECONOMIC LICENSING DEPARTMENT - Request for Letter of Support for
+													permanent work visa
+												</option>
+
+												<option value="1440406668220"
+													title="Request for Letter of Support to a bank">
+													ECONOMIC LICENSING DEPARTMENT - Request for Letter of Support to a
+													bank
+												</option>
+
+												<option value="1440406410162"
+													title="Safety Management System (SMS) Manual Acceptance (Initial/Amendments)">
+													Safety &amp; Risk Management - Safety Management System (SMS) Manual
+													Acceptance (Initial/Amendments)
+												</option>
+
+												<option value="1440407372634"
+													title="Saudi Arabian Parts Manufacturer Approval (SAPMA)">
+													Airworthiness-Engineering - Saudi Arabian Parts Manufacturer
+													Approval (SAPMA)
+												</option>
+
+												<option value="1440410326639" title="Security Clearance Request">
+													Security Clearance - Security Clearance Request
+												</option>
+
+												<option value="1440409377090"
+													title="Service Difficulty Reporting System (MISR)">
+													Airworthiness-Royal Fleet - Service Difficulty Reporting System
+													(MISR)
+												</option>
+
+												<option value="1440406410295"
+													title="Service Difficulty Reporting System (SDRS)">
+													Airworthiness - Air Carrier - Service Difficulty Reporting System
+													(SDRS)
+												</option>
+
+												<option value="1440409372681"
+													title="Service Difficulty Reporting System (SDRS)">
+													Airworthiness-Royal Fleet - Service Difficulty Reporting System
+													(SDRS)
+												</option>
+
+												<option value="1440410772616"
+													title="Service Difficulty Reporting System (SDRS) - GALS">
+													Airworthiness - General Aviation and Light Sports - Service
+													Difficulty Reporting System (SDRS) - GALS
+												</option>
+
+												<option value="1440410657982"
+													title="Tawakkalna Request for Crew members">
+													Air Transport - Tawakkalna Request for Crew members
+												</option>
+
+												<option value="1440407084599"
+													title="Temporary Flight Authorization (TFA)">
+													Flight Operations-General Aviation - Temporary Flight Authorization
+													(TFA)
+												</option>
+
+											</select>
+										</div>
+										<div class="col-md-2">
+											<button class="formAdded-btn" onclick="addRelatedEService('Remove')"
+												type="button">Add</button>
+										</div>
+									</div>
+
+									<br>
+									<div id="servicesList">
+
+									</div>
+								</div>
+
+								<div class="mt-5">
+									<div class="mt-5">
+										<div class="sectiontitles">
+											<h4>Classification tags</h4>
+										</div>
+									</div>
+									<div class="d-flex align-items-center">
+										<div class="pagesubtitle_B mt-3">
+											<span>Specialty Tags :</span>
+										</div>
+									</div>
+									<ul class="SA_Tags">
+
+										<li>
+											<label>
+												<input type="checkbox" name="tags" value="232">
+												<div class="icon-box">
+													<span class="fa fa-home">Aerodrome and Aerospace
+														<span>(1)</span></span>
+												</div>
+											</label>
+										</li>
+
+										<li>
+											<label>
+												<input type="checkbox" name="tags" value="233">
+												<div class="icon-box">
+													<span class="fa fa-home">Aerodrome and Aerospace - Aerodromes
+														Standards <span>(2)</span></span>
+												</div>
+											</label>
+										</li>
+
+										<li>
+											<label>
+												<input type="checkbox" name="tags" value="234">
+												<div class="icon-box">
+													<span class="fa fa-home">Aerodrome and Aerospace - Ground Operation
+														Services <span>(2)</span></span>
+												</div>
+											</label>
+										</li>
+
+										<li>
+											<label>
+												<input type="checkbox" name="tags" value="235">
+												<div class="icon-box">
+													<span class="fa fa-home">Aerodrome and Aerospace-Obstacle Procedures
+														<span>(2)</span></span>
+												</div>
+											</label>
+										</li>
+
+										<li>
+											<label>
+												<input type="checkbox" name="tags" value="236">
+												<div class="icon-box">
+													<span class="fa fa-home">Air Transport <span>(1)</span></span>
+												</div>
+											</label>
+										</li>
+
+										<li>
+											<label>
+												<input type="checkbox" name="tags" value="237">
+												<div class="icon-box">
+													<span class="fa fa-home">Air Transport - Hajj and Ummrah
+														<span>(2)</span></span>
+												</div>
+											</label>
+										</li>
+
+										<li>
+											<label>
+												<input type="checkbox" name="tags" value="238">
+												<div class="icon-box">
+													<span class="fa fa-home">Airworthiness - Air Carrier
+														<span>(12)</span></span>
+												</div>
+											</label>
+										</li>
+
+										<li>
+											<label>
+												<input type="checkbox" name="tags" value="239">
+												<div class="icon-box">
+													<span class="fa fa-home">Airworthiness - Aircraft Registration
+														<span>(6)</span></span>
+												</div>
+											</label>
+										</li>
+
+										<li>
+											<label>
+												<input type="checkbox" name="tags" value="240">
+												<div class="icon-box">
+													<span class="fa fa-home">Airworthiness - General Aviation and Light
+														Sports <span>(22)</span></span>
+												</div>
+											</label>
+										</li>
+
+										<li>
+											<label>
+												<input type="checkbox" name="tags" value="241">
+												<div class="icon-box">
+													<span class="fa fa-home">Airworthiness-Engineering
+														<span>(11)</span></span>
+												</div>
+											</label>
+										</li>
+
+										<li>
+											<label>
+												<input type="checkbox" name="tags" value="242">
+												<div class="icon-box">
+													<span class="fa fa-home">Airworthiness-Repair Station
+														<span>(6)</span></span>
+												</div>
+											</label>
+										</li>
+
+										<li>
+											<label>
+												<input type="checkbox" name="tags" value="243">
+												<div class="icon-box">
+													<span class="fa fa-home">Airworthiness-Royal Fleet
+														<span>(12)</span></span>
+												</div>
+											</label>
+										</li>
+
+										<li>
+											<label>
+												<input type="checkbox" name="tags" value="244">
+												<div class="icon-box">
+													<span class="fa fa-home">Airworthiness-Technical school
+														<span>(4)</span></span>
+												</div>
+											</label>
+										</li>
+
+										<li>
+											<label>
+												<input type="checkbox" name="tags" value="245">
+												<div class="icon-box">
+													<span class="fa fa-home">Aviation Security at the General Authority
+														of Civil Aviation <span>(3)</span></span>
+												</div>
+											</label>
+										</li>
+
+										<li>
+											<label>
+												<input type="checkbox" name="tags" value="246">
+												<div class="icon-box">
+													<span class="fa fa-home">ECONOMIC LICENSING DEPARTMENT
+														<span>(8)</span></span>
+												</div>
+											</label>
+										</li>
+
+										<li>
+											<label>
+												<input type="checkbox" name="tags" value="247">
+												<div class="icon-box">
+													<span class="fa fa-home">Flight Operations <span>(13)</span></span>
+												</div>
+											</label>
+										</li>
+
+										<li>
+											<label>
+												<input type="checkbox" name="tags" value="248">
+												<div class="icon-box">
+													<span class="fa fa-home">Flight Operations-Flight Dispatch
+														<span>(2)</span></span>
+												</div>
+											</label>
+										</li>
+
+										<li>
+											<label>
+												<input type="checkbox" name="tags" value="249">
+												<div class="icon-box">
+													<span class="fa fa-home">Flight Operations-Foreign Air Carrier
+														Operator <span>(3)</span></span>
+												</div>
+											</label>
+										</li>
+
+										<li>
+											<label>
+												<input type="checkbox" name="tags" value="250">
+												<div class="icon-box">
+													<span class="fa fa-home">Flight Operations-General Aviation
+														<span>(6)</span></span>
+												</div>
+											</label>
+										</li>
+
+										<li>
+											<label>
+												<input type="checkbox" name="tags" value="251">
+												<div class="icon-box">
+													<span class="fa fa-home">Flight Operations-Training Organization
+														<span>(3)</span></span>
+												</div>
+											</label>
+										</li>
+
+										<li>
+											<label>
+												<input type="checkbox" name="tags" value="252">
+												<div class="icon-box">
+													<span class="fa fa-home">Licensing <span>(4)</span></span>
+												</div>
+											</label>
+										</li>
+
+										<li>
+											<label>
+												<input type="checkbox" name="tags" value="253">
+												<div class="icon-box">
+													<span class="fa fa-home">Safety &amp; Risk Management
+														<span>(3)</span></span>
+												</div>
+											</label>
+										</li>
+
+										<li>
+											<label>
+												<input type="checkbox" name="tags" value="254">
+												<div class="icon-box">
+													<span class="fa fa-home">Security Clearance <span>(2)</span></span>
+												</div>
+											</label>
+										</li>
+
+									</ul>
+									<div class="d-flex align-items-center">
+										<div class="pagesubtitle mt-3">
+											<span style="font-size: 1.5rem;">Audience Tags :</span>
+										</div>
+									</div>
+									<ul class="SA_Tags">
+
+										<li>
+											<label>
+												<input type="checkbox" name="tags" value="1440406384040">
+												<div class="icon-box">
+													<span class="fa fa-home">Aircraft <span>(46)</span></span>
+												</div>
+											</label>
+										</li>
+
+										<li>
+											<label>
+												<input type="checkbox" name="tags" value="1440406384899">
+												<div class="icon-box">
+													<span class="fa fa-home">Airline <span>(19)</span></span>
+												</div>
+											</label>
+										</li>
+
+										<li>
+											<label>
+												<input type="checkbox" name="tags" value="1440406383608">
+												<div class="icon-box">
+													<span class="fa fa-home">Airman <span>(13)</span></span>
+												</div>
+											</label>
+										</li>
+
+										<li>
+											<label>
+												<input type="checkbox" name="tags" value="1440406384796">
+												<div class="icon-box">
+													<span class="fa fa-home">Airport <span>(9)</span></span>
+												</div>
+											</label>
+										</li>
+
+										<li>
+											<label>
+												<input type="checkbox" name="tags" value="1440410722985">
+												<div class="icon-box">
+													<span class="fa fa-home">DAR-T (Domestic) <span>(1)</span></span>
+												</div>
+											</label>
+										</li>
+
+										<li>
+											<label>
+												<input type="checkbox" name="tags" value="1440406385331">
+												<div class="icon-box">
+													<span class="fa fa-home">Designee <span>(4)</span></span>
+												</div>
+											</label>
+										</li>
+
+										<li>
+											<label>
+												<input type="checkbox" name="tags" value="1440406385071">
+												<div class="icon-box">
+													<span class="fa fa-home">Employee <span>(2)</span></span>
+												</div>
+											</label>
+										</li>
+
+										<li>
+											<label>
+												<input type="checkbox" name="tags" value="1440406382650">
+												<div class="icon-box">
+													<span class="fa fa-home">Operator <span>(19)</span></span>
+												</div>
+											</label>
+										</li>
+
+										<li>
+											<label>
+												<input type="checkbox" name="tags" value="1440406385258">
+												<div class="icon-box">
+													<span class="fa fa-home">Pilot <span>(1)</span></span>
+												</div>
+											</label>
+										</li>
+
+										<li>
+											<label>
+												<input type="checkbox" name="tags" value="1440406385453">
+												<div class="icon-box">
+													<span class="fa fa-home">Provider <span>(11)</span></span>
+												</div>
+											</label>
+										</li>
+
+										<li>
+											<label>
+												<input type="checkbox" name="tags" value="1440406382622">
+												<div class="icon-box">
+													<span class="fa fa-home">School <span>(3)</span></span>
+												</div>
+											</label>
+										</li>
+
+										<li>
+											<label>
+												<input type="checkbox" name="tags" value="1440406515873">
+												<div class="icon-box">
+													<span class="fa fa-home">Service Provider <span>(5)</span></span>
+												</div>
+											</label>
+										</li>
+
+										<li>
+											<label>
+												<input type="checkbox" name="tags" value="1440406383392">
+												<div class="icon-box">
+													<span class="fa fa-home">Students <span>(3)</span></span>
+												</div>
+											</label>
+										</li>
+
+									</ul>
+								</div>
+
+								<div class="mt-5">
+									<div class="mt-5">
+										<div class="sectiontitles">
+											<h4>Service icon</h4>
+										</div>
+										<div class="d-flex align-items-center">
+											<div class="pagesubtitle mt-3">
+												<span>Add Service Icon ( ideally: height: 100px, width: 75px )</span>
+											</div>
+										</div>
+									</div>
+									<div class="image-preview-container mt-5">
+										<div class="preview">
+											<img id="preview-selected-image">
+										</div>
+										<label for="file-upload">UPLOAD</label>
+										<input type="file" class="formAdded-btn" id="file-upload" name="ICON"
+											accept="image/jpeg,image/png" onchange="previewImage(event);">
+									</div>
+								</div>
+
+								<div class="mt-5 mb-5">
+									<div class="d-flex justify-content-center">
+										<div class="mx-2">
+											<button class="servicesbtn sendbtn" type="submit">
+												Add New EService
+											</button>
+										</div>
+										<div class="mx-2">
+											<button class="servicesbtn cancelbtn" onclick="history.back()">
+												Cancel
+											</button>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="mainfooter">
+		<footer>
+			<div class="container">
+				<div>
+					© All rights reserved to
+					&nbsp;
+					<img id="footerimg" src="./images/GACA Logo.png" alt="GACA Logo">
+					&nbsp;
+					General Authority of Civil Aviation
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<a target="_blank" style="color: #000;text-decoration: none"
+						href="https://gaca.gov.sa/web/en-gb/page/content-policy">Privacy Policy</a>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<a target="_blank" style="color: #000;text-decoration: none"
+						href="https://gaca.gov.sa/web/en-gb/content/secure-usage-policy">Secure Usage Policy</a>
+
+
+				</div>
+			</div>
+		</footer>
+	</div>
+
+
+
+
+
+	<!-- Footer END -->
+
+
+	<!-- Libraries end -->
+
+	<script>
+
+	</script>
+
+	<script src="./libraries/popper/js/popper.js"></script>
+	<script src="./libraries/bootstrap-5.1.3/js/bootstrap.js"></script>
+	<script src="./libraries/slick-1.8.1/slick.js"></script>
+	<script src="./libraries/datatable/js/jquery.dataTables.min.js"></script>
+	<script src="./libraries/pushymenu/js/pushy.js"></script>
+	<script src="./libraries/Magnific-Popup/js/jquery.magnific-popup.js"></script>
+	<script src="./libraries/pdf.worker/pdf.js"></script>
+	<script src="./libraries/datepicker/js/bootstrap-hijri-datetimepicker.js"></script>
+	<script src="./libraries/datepicker/js/datepicker_script.js"></script>
+	<script src="./libraries/quill/quill.js"></script>
+	<!-- Libraries end -->
+	<!-- Scripts end -->
+
+	<script src="./js/main.js"></script>
+	<script src="./libraries/Swiper-Bundel/Swiper.js"></script>
+	<script>
+
+
+
+
+	</script>
+	<!-- Scripts end -->
+</body>
+
+</html>

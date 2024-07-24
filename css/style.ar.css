@@ -1,0 +1,67 @@
+* {
+    direction: rtl !important;
+}
+
+.rev-arr {
+    transform: rotate(180deg);
+}
+
+.essential-link-ar a {
+    color: #dfe9f0;
+    font-family: 'GB';
+    padding: 0 10px;
+    border-left: 2px solid #dfe9f0;
+    font-size: 14px;
+}
+
+.essential-link-ar a input {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+}
+
+.essential-link-ar a:last-of-type {
+    border-left: none;
+}
+
+.essential-link-ar a:nth-child(2) {
+    color: #ffff;
+}
+
+.datepicker-icon {
+    background: url(../images/DateIcon.png) no-repeat 4% 50% !important;
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+    background-position: 4% 40%;
+}
+
+input[type="time"] {
+    text-align: right;
+}
+
+.cardLinks {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+[dir="rtl"] select {
+    background-position: left 0.5rem center;
+
+}
+
+.contactCatHolder>div:first-child {
+    margin-left: 20px;
+}
+
+.form-check-input {
+    float: left !important;
+    margin-left: 0 !important;
+}
+
+.contactCatHolder>div img {
+
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}

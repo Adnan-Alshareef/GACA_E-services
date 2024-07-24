@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicon tags -->
+    <link rel="apple-touch-icon" sizes="60x60" href="./images/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon.ico" />
+    <link rel="manifest" href="./images/favicon/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="./images/favicon/mstile-150x150.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- favicon tags end -->
+
+    <title>GACA | الهيئة العامة للطيران المدني</title>
+    <!-- Libraries -->
+    <link rel="stylesheet" href="./libraries/bootstrap-5.1.3/css/bootstrap.css" />
+    <link rel="stylesheet" href="./libraries/slick-1.8.1/slick.css" />
+    <link rel="stylesheet" href="./libraries/slick-1.8.1/slick-theme.css" />
+    <link rel="stylesheet" href="./libraries/datatable/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" href="./libraries/datatable/css/datatable-custom-theme.css" />
+    <link rel="stylesheet" href="./libraries/pushymenu/css/pushy.css" />
+    <link rel="stylesheet" href="./libraries/pushymenu/css/pushy-en.css" />
+    <link rel="stylesheet" href="./libraries/datepicker/css/bootstrap-datetimepicker.css">
+    <!-- Libraries end -->
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style.en.css" />
+    <link rel="stylesheet" href="./css/style.mobile.css" />
+    <!-- Styles end -->
+
+</head>
+
+<body class="bgof-body">
+    <!-- Header & Navbar -->
+    <div class="logos">
+        <div class="container logos">
+            <div class="text_link_component t_op_header">
+                <div class="tlc_first">
+                    <div class="tlc_text">
+                        <img class="gacalogo op_logo_image" src="./images/gaca_header_logo.png" alt="">
+                    </div>
+                </div>
+                <div class="tlc_last gacalogo">
+                    <!-- <div class="op">
+                        <p class="welcome_text">Welcome back <span>Ahmed</span> <span class="numb_of_notification">10</span></p>
+                        <a id="profile" data-bs-toggle="modal" data-bs-target="#profileModal" href="profile_link">MY PROFILE</a>
+                        <a id="signout" data-bs-toggle="modal" data-bs-target="#signoutModal" href="signoutlink">SIGN OUT</a>
+                    </div> -->
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">GACA E-Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">My Application</a>
+                    </li>
+
+                </ul>
+                <div class="ms-auto">
+
+                    <input class="btnl btn  myprofilebtn m-2" type="button" value="MY PROFILE"></input>
+                    <input class="loginbtn btn " type="button" value="SIGN OUT"></input>
+                </div>
+            </div>
+
+            <button class="menu-btn">☰</button>
+        </div>
+    </nav>
+    <!-- Pushy Menu -->
+    <nav class="pushy pushy-left">
+        <div class="pushy-content">
+            <a href="#" class="mobile-x">×</a>
+            <div id="op-mobile" class="text-center">
+            </div>
+            <ul class="mobile-menu">
+                <li><a href="./00_Register_ar.html" class="lang_switcher_button">العربية</a></li>
+                <li><a href="#">Homepage</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">profile</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Site Overlay -->
+    <div class="site-overlay"></div>
+
+    <!-- Main -->
+    <div class="mainbody">
+        <div class="container" id="container">
+            <div class="pt-3">
+                <div>
+                    <div class="infopage mb-5">
+                        <div class="p-5">
+                            <div class="d-flex justify-content-between align-items-center flex-wrap">
+                                <div class="d-flex">
+                                    <div class="">
+                                        <img src="./images/DronesMg.png" alt="">
+                                    </div>
+                                    <div class="mx-3 mt-3">
+                                        <h3>AME Designtion</h3>
+                                    </div>
+                                </div>
+                                <div class="mt-3 d-flex">
+                                    <div class="mx-4">
+                                        <a class="conversionslinks redbold " href="#">Edit E-Services</a>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <div class="">
+                                            <a class="conversionslinks lightbluebold " href="#">Go Back <img
+                                                    class="px-2" src="./images/gobackicon.png" alt=""></a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row gx-5">
+                                <div class="col-lg-8 col-md-12 ">
+                                    <div class="mt-3 mb-5">
+                                        <div class="d-flex align-items-center">
+                                            <div>
+                                                <img src="./images/infoblueicon.png" alt="">
+                                            </div>
+                                            <div class="mx-3 pagesubtitle">
+                                                <span style="font-size: 1.5rem;">Description</span>
+                                            </div>
+                                        </div>
+                                        <div class="px-md-4 px-sm-2">
+                                            <div class="px-md-4 px-sm-2">
+                                                <p class="">
+                                                    A given Certificate Holder/Service Provider’s SMS Acceptance
+                                                    Application can
+                                                    be initiated electronically by submitting all the required manuals
+                                                    and
+                                                    documents here.
+                                                </p>
+                                                <p class="">
+                                                    GACA Safety & Risk (concerned department) will be notified once an
+                                                    application is initiated and a confirmation of receipt will be
+                                                    forwarded to
+                                                    the applicant. A conventional (manual) review and acceptance process
+                                                    will
+                                                    take place and applicant will be contacted directly throughout the
+                                                    process.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="mt-5 mb-5">
+                                        <div class="d-flex align-items-center">
+                                            <div>
+                                                <img src="./images/Audience.png" alt="">
+                                            </div>
+                                            <div class="mx-3 pagesubtitle">
+                                                <span style="font-size: 1.5rem;">Audience</span>
+                                            </div>
+                                        </div>
+                                        <div class="px-md-4 px-sm-2">
+                                            <div class="px-md-4 px-sm-2">
+                                                <p class=" m-0">
+                                                    With effect from 1st March 2016, ground service providers offering
+                                                    any of
+                                                    the following services within the Kingdom of Saudi Arabia must be
+                                                    certificated:
+                                                </p>
+                                                <div class=" m-0">
+                                                    <ol>
+                                                        <li>Ramp handling</li>
+                                                        <li>Passenger handling</li>
+                                                        <li>Baggage handling</li>
+                                                        <li>Freight and mail handling</li>
+                                                        <li>Load control and aircraft dispatch</li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="mt-5 mb-5">
+                                        <div class="d-flex align-items-center">
+                                            <div>
+                                                <img src="./images/pre-request.png" alt="Pre-Requisites">
+                                            </div>
+                                            <div class="mx-3 pagesubtitle">
+                                                <span style="font-size: 1.5rem;">Pre-Requisites</span>
+                                            </div>
+                                        </div>
+                                        <div class="px-2">
+                                            <div class="px-2">
+                                                <div class="m-0">
+                                                    <ul style="list-style-position: inside;">
+                                                        <li>For existing Certificate Holders and other Service Providers
+                                                            required to have an SMS, refer to GACAR Part 199.13 (a)(1
+                                                            &2)</li>
+                                                        <li>All applicants who submit their initial application for
+                                                            certification after the coming into force date of GACAR Part
+                                                            5 (1st
+                                                            March 2016) must meet full compliance with GACAR Part 5 at
+                                                            time of
+                                                            initial certification.</li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="mt-5 mb-5">
+                                        <div class="d-flex align-items-center">
+                                            <div>
+                                                <img src="./images/Procedureicon.png" alt="Procedure">
+                                            </div>
+                                            <div class="mx-3 pagesubtitle">
+                                                <span style="font-size: 1.5rem;">Procedure</span>
+                                            </div>
+                                        </div>
+                                        <div class="px-2">
+                                            <div class=" ">
+                                                <div class=" m-0">
+                                                    <ol style="list-style-position: inside;">
+                                                        <li>The Applicant submits (SMS) Manual and all related documents
+                                                            to the acceptance of the system. </li>
+                                                        <li>Designated GACA Safety Specialist(s) is assigned to review
+                                                            the submitted SMS Manual and its related documents, to
+                                                            verify their compliance with the GACARs requirements.</li>
+                                                        <li>
+                                                            After reviewing the SMS Manual, Certificate Holder/Service
+                                                            Provider will be notified about any comments/findings that
+                                                            need correction and after rectification, Certificate
+                                                            Holder/Service Provider will be scheduled for an SMS
+                                                            Pre-Audit Visit.
+                                                        </li>
+                                                        <li>
+                                                            Any findings about the Pre-Audit will be sent to the
+                                                            Certificate Holder/Service Provider for correction before an
+                                                            acceptance is granted. (See Process Flowchart in Help
+                                                            Documents)
+                                                        </li>
+
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="mt-5 mb-5">
+                                        <div class="d-flex align-items-center">
+                                            <div>
+                                                <img src="./images/requiredForms.png" alt="Required Forms">
+                                            </div>
+                                            <div class="mx-3 pagesubtitle">
+                                                <span style="font-size: 1.5rem;">Required Forms</span>
+                                            </div>
+                                        </div>
+                                        <div class="px-2">
+                                            <div class="px-1">
+                                                <div class="m-0">
+                                                    <ul style="list-style-position: inside;">
+                                                        <li>
+                                                            SMS Acceptance Application Form <a class="Rf_list"
+                                                                href="#">( Download )</a>
+                                                        </li>
+                                                        <li>
+                                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                                            Tempora, ullam. <a class="Rf_list" href="#">( Download )</a>
+                                                        </li>
+                                                        <li>
+                                                            SMS Acceptance Application Form <a class="Rf_list"
+                                                                href="#">( Download )</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="mt-5 mb-5">
+                                        <div class="d-flex align-items-center">
+                                            <div>
+                                                <img src="./images/RequiredDocuments.png" alt="Required Documents">
+                                            </div>
+                                            <div class="mx-3 pagesubtitle">
+                                                <span style="font-size: 1.5rem;">Required Documents</span>
+                                            </div>
+                                        </div>
+                                        <div class="px-2">
+                                            <div class="px-1">
+                                                <div class="m-0">
+                                                    <ol style="list-style-position: inside;">
+                                                        <li>SMS manual (SMM)</li>
+                                                        <li>SMS Implementation Plan (IP) & Gap Analysis</li>
+                                                        <li>Emergency Response Plan (ERP)</li>
+                                                        <li>Key Performance Indicators (KPIs)</li>
+                                                        <li>CV of Director Safety/SMS Manager</li>
+                                                        <li>other relevant documents</li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="mt-5 mb-5">
+                                        <div class="d-flex align-items-center">
+                                            <div>
+                                                <img src="./images/DeliveryTime.png" alt="Delivery Time">
+                                            </div>
+                                            <div class="mx-3 pagesubtitle">
+                                                <span style="font-size: 1.5rem;">Delivery Time</span>
+                                            </div>
+                                        </div>
+                                        <div class="px-md-4 px-sm-2">
+                                            <div class="px-md-4 px-sm-4">
+                                                <div class="m-0">
+                                                    <p><span>3</span> working days</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="mt-5 mb-5">
+                                        <div class="d-flex align-items-center">
+                                            <div>
+                                                <img src="./images/TermsandConditions.png" alt="Terms and Conditions">
+                                            </div>
+                                            <div class="mx-3 pagesubtitle">
+                                                <span style="font-size: 1.5rem;">Terms and Conditions</span>
+                                            </div>
+                                        </div>
+                                        <div class="px-md-4 px-sm-2">
+                                            <div class="px-3 px-md-4 px-sm-2">
+                                                <div class="m-0">
+                                                    <p>With effect from 1st March 2016, ground service providers
+                                                        offering any of the following services </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="mt-5 mb-5">
+                                        <div class="d-flex align-items-center">
+                                            <div>
+                                                <img src="./images/AdditionalHelp.png" alt="Additional Help">
+                                            </div>
+                                            <div class="mx-3 pagesubtitle">
+                                                <span style="font-size: 1.5rem;">Additional Help</span>
+                                            </div>
+                                        </div>
+                                        <div class="px-2">
+                                            <div class="px-1">
+                                                <div class="m-0">
+                                                    <ul style="list-style-position: inside;">
+                                                        <li>GACA-Safety & Risk can be reached at:</li>
+                                                        <li>Email: sd@gaca.gov.sa </li>
+                                                        <li>Tel: +966 (12) 685 5491</li>
+                                                        <li>or in person at GACA Safety, Security & Air Transport
+                                                            Building King Abdulaziz Int’l Airport 8:00 am to 04:00 pm
+                                                            (KSA Time) Sun to Thurs</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mt-5 mb-5">
+                                        <div>
+                                            <button class="applybtn">
+                                                Apply Now
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="mt-5 mb-5">
+                                        <div class="loginrequired">
+                                            <div> <button class="applybtn" disabled>
+                                                    Apply Now
+                                                </button></div>
+                                            <div class="loginrequired-item">Lorem ipsum dolor sit amet consectetur
+                                                adipisicing elit. Voluptatem,
+                                                perferendis. <a href="">Visit us</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-12">
+                                    <div class="pricesection">
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <div class="me-2">
+                                                <img src="./images/feesicon.png" alt="">
+                                            </div>
+                                            <div class="pricedetais">
+                                                Service fees: <span class="pricesubdetais">SR200</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="mt-5">
+                                        <table class="relateditems w-100">
+                                            <thead>
+                                                <tr>
+                                                    <th> Related E-Services</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <img src="./images/DronesV1Xs.png" alt="">
+                                                        <span>Medical Certificates</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <img src="./images/DronesV2Xs.png" alt="">
+                                                        <span>Knowledge Tests</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <img src="./images/DronesV3Xs.png" alt="">
+                                                        <span>Knowledge Tests</span>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="mt-5">
+                                        <table class="relateditems connectiondetails w-100">
+                                            <thead>
+                                                <tr>
+                                                    <th> Get in touch</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <p>Tel: <span>800</span><span>116</span> <span>8888</span></p>
+                                                        <p>Fax: <span>Safety-ecoreg@gaca.gov.sa</span></p>
+                                                        <p><span>8:00 AM to 04:00 PM
+                                                                From Sunday to Thursday</span></p>
+                                                    </td>
+                                                </tr>
+
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="useservicesbox mt-4">
+                                        <div class="p-5">
+                                            <div class="d-flex align-items-center mb-3">
+                                                <div class="me-3">
+                                                    <img src="./images/settingsIcon.png" alt="">
+                                                </div>
+                                                <div class="greencolor">
+                                                    <h4>How to use services :</h4>
+                                                </div>
+                                            </div>
+                                            <ol class="servicesInstructions">
+                                                <li>
+                                                    <p>
+                                                        <span> Application:</span> The applicant must submit all
+                                                        relevant documents
+                                                        deregistration as provided in the rules of the General Authority
+                                                        for
+                                                        Civil Aviation in the kingdom of Saudi Arabia.
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <P>
+                                                        <span>Review:</span> the GACA will review the documents
+                                                        submitted and verify if
+                                                        compliance with the rules.
+                                                    </P>
+                                                </li>
+                                                <li>
+                                                    <p><span>Issue of a Certification of Deregistration:</span> The GACA
+                                                        will only issue
+                                                        a Certification of Deregistration when the GACA is completely
+                                                        satisfied that all regulatory have been adequately addressed.
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p><span>Delivery</span> of a Certificate of Deregistration.</p>
+                                                </li>
+                                                <li>
+                                                    <p> The Applicant will provide all documents required for filing
+                                                        purposes.</p>
+
+                                                </li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        <footer>
+            <div class="container">
+                <div>
+                    © All rights reserved to
+                    &nbsp;
+                    <img id="footerimg" src="./images/GACA Logo.png" alt="GACA Logo">
+                    &nbsp;
+                    General Authority of Civil Aviation
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a target="_blank" style="color: #000;text-decoration: none"
+                        href="https://gaca.gov.sa/web/en-gb/page/content-policy">Privacy Policy</a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a target="_blank" style="color: #000;text-decoration: none"
+                        href="https://gaca.gov.sa/web/en-gb/content/secure-usage-policy">Secure Usage Policy</a>
+
+
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+
+
+    <!-- Footer END -->
+
+
+    <!-- Libraries end -->
+
+
+    <script src="./libraries/jquery-3.6.0/js/jquery.js"></script>
+    <script src="./libraries/popper/js/popper.js"></script>
+    <script src="./libraries/bootstrap-5.1.3/js/bootstrap.js"></script>
+    <script src="./libraries/slick-1.8.1/slick.js"></script>
+    <script src="./libraries/datatable/js/jquery.dataTables.min.js"></script>
+    <script src="./libraries/pushymenu/js/pushy.js"></script>
+    <script src="./libraries/Magnific-Popup/js/jquery.magnific-popup.js"></script>
+    <script src="./libraries/pdf.worker/pdf.js"></script>
+    <script src="./libraries/datepicker/js/bootstrap-hijri-datetimepicker.js"></script>
+    <script src="./libraries/datepicker/js/datepicker_script.js"></script>
+    <!-- Libraries end -->
+    <!-- Scripts end -->
+
+    <script src="./js/main.js"></script>
+    <script src="./libraries/Swiper-Bundel/Swiper.js"></script>
+    <!-- Scripts end -->
+</body>
+
+</html>

@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicon tags -->
+    <link rel="apple-touch-icon" sizes="60x60" href="./images/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon.ico" />
+    <link rel="manifest" href="./images/favicon/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="./images/favicon/mstile-150x150.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- favicon tags end -->
+
+    <title>GACA | الهيئة العامة للطيران المدني</title>
+    <!-- Libraries -->
+    <link rel="stylesheet" href="./libraries/bootstrap-5.1.3/css/bootstrap.css" />
+    <link rel="stylesheet" href="./libraries/slick-1.8.1/slick.css" />
+    <link rel="stylesheet" href="./libraries/slick-1.8.1/slick-theme.css" />
+    <link rel="stylesheet" href="./libraries/datatable/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" href="./libraries/datatable/css/datatable-custom-theme.css" />
+    <link rel="stylesheet" href="./libraries/pushymenu/css/pushy.css" />
+    <link rel="stylesheet" href="./libraries/pushymenu/css/pushy-en.css" />
+    <link rel="stylesheet" href="./libraries/datepicker/css/bootstrap-datetimepicker.css">
+    <!-- Libraries end -->
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style.en.css" />
+    <link rel="stylesheet" href="./css/style.mobile.css" />
+    <!-- Styles end -->
+
+
+</head>
+
+<body>
+    <!-- Header & Navbar -->
+    <div class="logos">
+        <div class="container logos">
+            <div class="text_link_component t_op_header">
+                <div class="tlc_first">
+                    <div class="tlc_text">
+                        <img class="gacalogo op_logo_image" src="./images/gaca_header_logo.png" alt="">
+                    </div>
+                </div>
+                <div class="tlc_last gacalogo">
+                    <!-- <div class="op">
+                        <p class="welcome_text">Welcome back <span>Ahmed</span> <span class="numb_of_notification">10</span></p>
+                        <a id="profile" data-bs-toggle="modal" data-bs-target="#profileModal" href="profile_link">MY PROFILE</a>
+                        <a id="signout" data-bs-toggle="modal" data-bs-target="#signoutModal" href="signoutlink">SIGN OUT</a>
+                    </div> -->
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item ">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">GACA E-Services</a>
+                    </li>
+
+
+                </ul>
+                <div class="ms-auto">
+
+                    <input class="btnl btn  userLoginbtn m-2" type="button" value="Login"></input>
+
+                </div>
+            </div>
+
+            <button class="menu-btn">☰</button>
+        </div>
+    </nav>
+    <!-- Pushy Menu -->
+    <nav class="pushy pushy-left">
+        <div class="pushy-content">
+            <a href="#" class="mobile-x">×</a>
+            <div id="op-mobile" class="text-center">
+            </div>
+            <ul class="mobile-menu">
+                <li><a href="./00_Register_ar.html" class="lang_switcher_button">العربية</a></li>
+                <li><a href="#">Homepage</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">profile</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Site Overlay -->
+    <div class="site-overlay"></div>
+
+    <!-- Main -->
+    <div class="pagebg">
+        <div class="container" id="container">
+            <div class="pt-5">
+                <div class="mt-4">
+                    <div class="infopage mb-5">
+                        <div class="p-5">
+                            <div class="d-flex flex-wrap justify-content-between align-items-center">
+                                <div class="mainTitle">
+                                    <h1>Register </h1>
+                                </div>
+                                <div class="">
+                                    <a class="conversionslinks lightbluebold " href="#">Go Back
+                                        <img class="px-2" src="./images/gobackicon.png" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="mt-4 mb-4">
+                                <p>Registration is required in order to apply to any Please provide your personal
+                                    information.</p>
+                            </div>
+                            <div class="sectiondevider">
+                                <div class="sectiontitles">
+                                    <h4>Personal Information</h4>
+                                </div>
+                                <form>
+                                    <div class="row mt-3 mb-3">
+                                        <div class=" col-md-6 mb-3">
+                                            <label class="form-label">First Name:</label>
+                                            <input type="text" class="form-control" value="Adnan" disabled>
+                                        </div>
+                                        <div class=" col-md-6 mb-3">
+                                            <label class="form-label">Family Name:</label>
+                                            <input type="text" class="form-control" value="Alshareef" disabled>
+                                        </div>
+                                        <div class=" col-md-6 mb-3">
+                                            <label class="form-label">Country:</label>
+                                            <select class="form-select" aria-label=" select">
+                                                <option value="SaudiArabia" selected>Saudi Arabia</option>
+                                                <option value="1"></option>
+                                                <option value="2"></option>
+                                                <option value="3"></option>
+                                            </select>
+                                        </div>
+                                        <div class=" col-md-6 mb-3">
+                                            <label class="form-label">Audience Type:</label>
+                                            <select class="form-select" aria-label=" select">
+                                                <option value="" selected>Select</option>
+                                                <option value=""></option>
+                                                <option value=""></option>
+                                                <option value=""></option>
+                                            </select>
+                                        </div>
+                                        <div>
+                                            <label class="form-label">Company Name:</label>
+                                        </div>
+                                        <div class="d-flex flex-wrap align-items-center justify-content-between mb-3">
+                                            <div class="companyRow">
+                                                <input id="NafathCompany_" type="text" class="form-control" disabled>
+                                            </div>
+                                            <div class="companyRow">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="NafathRegCompanyRepresentative"
+                                                    onclick="NafathComapny(this.id)">
+                                                <label class="form-check-label" for="NafathRegCompanyRepresentative">
+                                                    Company Representative
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class=" col-md-6 mb-3">
+                                            <label class="form-label">Phone Number:</label>
+                                            <input type="text" class="form-control" disabled>
+                                        </div>
+                                        <div class=" col-md-6 mb-3">
+                                            <label class="form-label">Gender</label>
+                                            <select class="form-select" aria-label=" select">
+                                                <option value="Male" selected>Male</option>
+                                                <option value="Female">Female</option>
+                                            </select>
+                                        </div>
+                                        <div class=" col-md-12 mb-3">
+                                            <label class="form-label">Address:</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class=" col-md-12 mb-3">
+                                            <input class="form-check-input" type="checkbox" value="">
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                                I accept the <span class="TermsandConditions" data-bs-toggle="modal"
+                                                    data-bs-target="#TermsandConditions">Terms and
+                                                    Conditions.</span>
+                                            </label>
+                                        </div>
+                                        <div class="modal fade " id="TermsandConditions" tabindex="-1"
+                                            aria-labelledby="TermsandConditionsTitle" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h1 class="modal-title fs-5" id="TermsandConditionsTitle">Terms
+                                                            and
+                                                            Conditions.
+                                                        </h1>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+
+                                                        <div>
+                                                            <p>
+                                                                Through this website, the General Authority of Civil
+                                                                Aviation in Saudi Arabia seeks to enable its clients to
+                                                                download and copy information, documents, and materials
+                                                                for personal and/or non-commercial use, as per the terms
+                                                                and conditions outlined below and the restrictions that
+                                                                apply to specific materials available on the site.
+                                                            </p>
+                                                            <p>
+                                                                All of the terms and conditions listed below apply to
+                                                                any and all materials available through this site.
+                                                                Members of the Authority’s staff may be subject to
+                                                                additional terms and conditions that govern their access
+                                                                to, and usage of, these materials. Unless expressly
+                                                                stated otherwise, all opinions, interpretations, and
+                                                                conclusions contained within the materials available
+                                                                through this site are solely those of the person or
+                                                                persons who posted them, and do not necessarily
+                                                                represent the Authority or the countries or nations
+                                                                those persons come from. Users must be particularly
+                                                                aware and expressly consent and accept that the
+                                                                Authority may in no way, shape, or form be held
+                                                                accountable for any conduct, behavior, or course of
+                                                                action that may result from the usage of those
+                                                                materials, and that none of the content available on the
+                                                                website, or any materials uploaded to it, may be
+                                                                construed – either expressly or implicitly – as
+                                                                recommendations made by the Authority or on its behalf.
+                                                            </p>
+                                                            <p>
+                                                                This website may contain advice, opinions, and data from
+                                                                various information and content providers. As such, the
+                                                                General Authority of Civil Aviation neither attests to,
+                                                                nor endorses, the veracity, accuracy or reliability of
+                                                                any advice, opinion, data, or any other information
+                                                                provided by any of those parties therein. Usage of, or
+                                                                any action, taken, behavior pursued, or conduct
+                                                                performed based on any opinions, advice, data, or any
+                                                                other information available on the site shall be at the
+                                                                sole discretion of the user, and neither the Authority
+                                                                nor any of its subsidiaries, agents, or staff may be
+                                                                held responsible towards any users or other person or
+                                                                persons for any reason – be it an alteration, damage,
+                                                                defect, deletion, disconnection, discontinuation, error,
+                                                                interruption, malfunction, malware, omission, or poor
+                                                                performance and/or connectivity, or any other damages –
+                                                                that may result from usage of any of the site’s content.
+                                                            </p>
+                                                            <p>
+                                                                This website contains links to other, external,
+                                                                third-party websites that are wholly beyond the control
+                                                                of the General Authority of Civil Aviation. The
+                                                                Authority may not be deemed responsible for the nature
+                                                                and/or content of any website that may be linked to, or
+                                                                any other link within the domains of those websites. The
+                                                                Authority provides these links solely for the
+                                                                convenience of its clients, and no way, shape, or form
+                                                                can a link posted on the Authority’s website be
+                                                                construed as falling within the Authority’s
+                                                                responsibility, or as an endorsement by the Authority
+                                                                for the content that may be found in that link.
+                                                            </p>
+                                                            <p>
+                                                                The rules that govern the usage of the General Authority
+                                                                of Civil Aviation’s website apply to all visitors and
+                                                                users of the site. Users and visitors may be logged out
+                                                                and/or blocked and/or terminated should any violation by
+                                                                any user occur, or should there be any reason to believe
+                                                                that a user may have violated or broken the terms and
+                                                                conditions of use, including, but not limited to:
+                                                            </p>
+                                                            <p>
+                                                                Gaining access to data that such user(s) are
+                                                                unauthorized to access, or logging into a system or
+                                                                domain that they are unauthorized to access.
+                                                            </p>
+                                                            <p>
+                                                                Attempting to interfere with services offered to any
+                                                                user, host, or network, including, for example,
+                                                                uploading or linking to malware, initiating a denial of
+                                                                service (DoS) attack, sending unsolicited messages, or
+                                                                hacking.
+
+                                                            </p>
+                                                            <p>
+                                                                Spamming the website, including dispatching promotional
+                                                                and/or advertisement emails, the misrepresentation or
+                                                                falsification of any other information, whether in part
+                                                                or in full, or sending newsgroup messages.
+
+                                                            </p>
+                                                            <p>
+                                                                Using the website’s domain name as an email domain,
+                                                                dispatching emails that appear to come from the website
+                                                                or sent on its behalf; using its name or domain to
+                                                                defame or slander the Authority, the website, or any
+                                                                person or persons or to publicize false information and
+                                                                wrongfully attribute them to the Authority.
+                                                            </p>
+                                                            <p>Violating any of these rules, or abusing the system or
+                                                                the network, will subject the perpetrator(s) to civil
+                                                                and criminal liability. Any and all cases that include
+                                                                such violations and abuse shall be thoroughly
+                                                                investigated and the perpetrators prosecuted to the full
+                                                                extent of the law.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer justify-content-center">
+
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-bs-dismiss="modal">Close</button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mt-5 mb-5">
+                                            <div class="d-flex justify-content-center">
+                                                <div class="mx-2">
+                                                    <button class="servicesbtn sendbtn">
+                                                        Register
+                                                    </button>
+                                                </div>
+                                                <div class="mx-2">
+                                                    <button class="servicesbtn cancelbtn">
+                                                        Cancel
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+        <footer>
+            <div class="container">
+                <div>
+                    © All rights reserved to
+                    &nbsp;
+                    <img id="footerimg" src="./images/GACA Logo.png" alt="GACA Logo">
+                    &nbsp;
+                    General Authority of Civil Aviation
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a target="_blank" style="color: #000;text-decoration: none"
+                        href="https://gaca.gov.sa/web/en-gb/page/content-policy">Privacy Policy</a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a target="_blank" style="color: #000;text-decoration: none"
+                        href="https://gaca.gov.sa/web/en-gb/content/secure-usage-policy">Secure Usage Policy</a>
+
+
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+    <!-- Footer END -->
+
+
+    <!-- Libraries end -->
+
+    <script src="./libraries/jquery-3.6.0/js/jquery.js"></script>
+    <script src="./libraries/popper/js/popper.js"></script>
+    <script src="./libraries/bootstrap-5.1.3/js/bootstrap.js"></script>
+    <script src="./libraries/slick-1.8.1/slick.js"></script>
+    <script src="./libraries/datatable/js/jquery.dataTables.min.js"></script>
+    <script src="./libraries/pushymenu/js/pushy.js"></script>
+    <script src="./libraries/Magnific-Popup/js/jquery.magnific-popup.js"></script>
+    <script src="./libraries/pdf.worker/pdf.js"></script>
+    <script src="./libraries/datepicker/js/bootstrap-hijri-datetimepicker.js"></script>
+    <script src="./libraries/datepicker/js/datepicker_script.js"></script>
+    <!-- Libraries end -->
+    <!-- Scripts end -->
+
+    <script src="./js/main.js"></script>
+    <script src="./libraries/Swiper-Bundel/Swiper.js"></script>
+    <!-- Scripts end -->
+</body>
+
+</html>
